@@ -13,11 +13,12 @@ import time
 import numpy as np
 
 
+###result directory
+result_dir="/home/sabuj/results/logiclocking/" #provide your own result directory
+
 ####specific input. e.g choose a particular opcode for all analysis
 mode=1 # mode =0 selectes normal mode; mode=1 selects customized input mode
-insel_start=-6
-insel_end=-3
-insel_val=[0,0,1]
+ctrl_val=[0,0,1,0,0] #selective op code-> AND:00000, OR:10000, XOR:01000, ADD: 11000, SUB: 11010, SHL: 00100, SRL: 10100, SRA: 10101 
 
 start = time.time()
 
@@ -92,7 +93,7 @@ for bb in range(0,len(bench_no)):
 		while (temp in inpval):
 			temp = [cryptogen.randrange(2) for i in range(linp)]
 			if mode==1:
-				temp[insel_start:insel_end]=insel_val
+				temp[-6:-3]+temp[-2:len(temp)]=ctrl_val
 		
 		#adding HI and LO if there exists NOT gates in the schematic
 		if inpname[-2] == 'HI' and inpname[-1] == 'LO':
@@ -146,7 +147,7 @@ for bb in range(0,len(bench_no)):
 		#num_keyval=np.zeros(lkey)
 		
 		
-		hd_filename='nom_med_HD_test_c'+str(bench_no[bb])+'_inputs_'+str(no_of_inputs[bb])+'_rows_'+str(rows[bb])+'_perc_'+str(replace_percentage[aa])+'.csv' #chip_number in different columns
+		hd_filename=result_dir+'nom_med_HD_test_c'+str(bench_no[bb])+'_inputs_'+str(no_of_inputs[bb])+'_rows_'+str(rows[bb])+'_perc_'+str(replace_percentage[aa])+'.csv' #chip_number in different columns
 		f_hd=open(hd_filename,'w')
 		
 		char_file='characterization_last_32_iteration_nominal_med.csv'

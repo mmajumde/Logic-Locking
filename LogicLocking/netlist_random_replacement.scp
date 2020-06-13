@@ -1,22 +1,22 @@
-XOR inv$op0 op0 HI 
+CHAO inv$op0 op0 HI k1 
 XOR inv$op1 op1 HI 
 XOR inv$op2 op2 HI 
 XOR inv$a0 a0 HI 
 XOR inv$b0 b0 HI 
 XOR inv$a1 a1 HI 
-CHAO inv$b1 b1 HI k7 
-CHAO inv$a2 a2 HI k8 
+XOR inv$b1 b1 HI 
+XOR inv$a2 a2 HI 
 XOR inv$b2 b2 HI 
-CHAO inv$a3 a3 HI k10 
+XOR inv$a3 a3 HI 
 XOR inv$b3 b3 HI 
-CHAO inv$a4 a4 HI k12 
+XOR inv$a4 a4 HI 
 XOR inv$b4 b4 HI 
 CHAO inv$a5 a5 HI k14 
 XOR inv$b5 b5 HI 
 XOR inv$a6 a6 HI 
-CHAO inv$b6 b6 HI k17 
+XOR inv$b6 b6 HI 
 XOR inv$a7 a7 HI 
-XOR inv$b7 b7 HI 
+CHAO inv$b7 b7 HI k19 
 CHAO inv$a8 a8 HI k20 
 XOR inv$b8 b8 HI 
 XOR inv$a9 a9 HI 
@@ -26,27 +26,27 @@ XOR inv$b10 b10 HI
 XOR inv$a11 a11 HI 
 XOR inv$b11 b11 HI 
 XOR inv$a12 a12 HI 
-XOR inv$b12 b12 HI 
+CHAO inv$b12 b12 HI k29 
 XOR inv$a13 a13 HI 
 XOR inv$b13 b13 HI 
 XOR inv$a14 a14 HI 
 XOR inv$b14 b14 HI 
 XOR inv$a15 a15 HI 
-XOR inv$b15 b15 HI 
-XOR inv$a16 a16 HI 
+CHAO inv$b15 b15 HI k35 
+CHAO inv$a16 a16 HI k36 
 XOR inv$b16 b16 HI 
 XOR inv$a17 a17 HI 
 XOR inv$b17 b17 HI 
-XOR inv$a18 a18 HI 
-CHAO inv$b18 b18 HI k41 
+CHAO inv$a18 a18 HI k40 
+XOR inv$b18 b18 HI 
 XOR inv$a19 a19 HI 
 XOR inv$b19 b19 HI 
-XOR inv$a20 a20 HI 
-XOR inv$b20 b20 HI 
+CHAO inv$a20 a20 HI k44 
+CHAO inv$b20 b20 HI k45 
 XOR inv$a21 a21 HI 
 XOR inv$b21 b21 HI 
 CHAO inv$a22 a22 HI k48 
-XOR inv$b22 b22 HI 
+CHAO inv$b22 b22 HI k49 
 XOR inv$a23 a23 HI 
 XOR inv$b23 b23 HI 
 XOR inv$a24 a24 HI 
@@ -55,18 +55,18 @@ XOR inv$a25 a25 HI
 XOR inv$b25 b25 HI 
 XOR inv$a26 a26 HI 
 XOR inv$b26 b26 HI 
-XOR inv$a27 a27 HI 
-XOR inv$b27 b27 HI 
+CHAO inv$a27 a27 HI k58 
+CHAO inv$b27 b27 HI k59 
 XOR inv$a28 a28 HI 
 XOR inv$b28 b28 HI 
 XOR inv$a29 a29 HI 
 XOR inv$b29 b29 HI 
 XOR inv$a30 a30 HI 
-CHAO inv$b30 b30 HI k65 
+XOR inv$b30 b30 HI 
 XOR inv$a31 a31 HI 
-XOR inv$b31 b31 HI 
-CHAO y0_and a0 b0 k68 
-CHAO y1_and a1 b1 k69 
+CHAO inv$b31 b31 HI k67 
+AND y0_and a0 b0 
+AND y1_and a1 b1 
 AND y2_and a2 b2 
 AND y3_and a3 b3 
 AND y4_and a4 b4 
@@ -78,11 +78,11 @@ AND y9_and a9 b9
 AND y10_and a10 b10 
 CHAO y11_and a11 b11 k79 
 AND y12_and a12 b12 
-AND y13_and a13 b13 
+CHAO y13_and a13 b13 k81 
 CHAO y14_and a14 b14 k82 
 AND y15_and a15 b15 
 AND y16_and a16 b16 
-CHAO y17_and a17 b17 k85 
+AND y17_and a17 b17 
 AND y18_and a18 b18 
 AND y19_and a19 b19 
 AND y20_and a20 b20 
@@ -91,45 +91,45 @@ AND y22_and a22 b22
 AND y23_and a23 b23 
 AND y24_and a24 b24 
 AND y25_and a25 b25 
-AND y26_and a26 b26 
-CHAO y27_and a27 b27 k95 
-AND y28_and a28 b28 
-CHAO y29_and a29 b29 k97 
-CHAO y30_and a30 b30 k98 
+CHAO y26_and a26 b26 k94 
+AND y27_and a27 b27 
+CHAO y28_and a28 b28 k96 
+AND y29_and a29 b29 
+AND y30_and a30 b30 
 AND y31_and a31 b31 
 OR y0_or a0 b0 
 OR y1_or a1 b1 
 OR y2_or a2 b2 
-CHAO y3_or a3 b3 k103 
+OR y3_or a3 b3 
 OR y4_or a4 b4 
-CHAO y5_or a5 b5 k105 
-CHAO y6_or a6 b6 k106 
+OR y5_or a5 b5 
+OR y6_or a6 b6 
 OR y7_or a7 b7 
 OR y8_or a8 b8 
 OR y9_or a9 b9 
 OR y10_or a10 b10 
 OR y11_or a11 b11 
 OR y12_or a12 b12 
-CHAO y13_or a13 b13 k113 
+OR y13_or a13 b13 
 OR y14_or a14 b14 
-OR y15_or a15 b15 
+CHAO y15_or a15 b15 k115 
 OR y16_or a16 b16 
 OR y17_or a17 b17 
 OR y18_or a18 b18 
-OR y19_or a19 b19 
-OR y20_or a20 b20 
+CHAO y19_or a19 b19 k119 
+CHAO y20_or a20 b20 k120 
 OR y21_or a21 b21 
 OR y22_or a22 b22 
 CHAO y23_or a23 b23 k123 
-CHAO y24_or a24 b24 k124 
+OR y24_or a24 b24 
 OR y25_or a25 b25 
 OR y26_or a26 b26 
 OR y27_or a27 b27 
-OR y28_or a28 b28 
-OR y29_or a29 b29 
-OR y30_or a30 b30 
-OR y31_or a31 b31 
-CHAO y0_xor a0 b0 k132 
+CHAO y28_or a28 b28 k128 
+CHAO y29_or a29 b29 k129 
+CHAO y30_or a30 b30 k130 
+CHAO y31_or a31 b31 k131 
+XOR y0_xor a0 b0 
 XOR y1_xor a1 b1 
 CHAO y2_xor a2 b2 k134 
 XOR y3_xor a3 b3 
@@ -139,51 +139,51 @@ XOR y6_xor a6 b6
 XOR y7_xor a7 b7 
 XOR y8_xor a8 b8 
 XOR y9_xor a9 b9 
-CHAO y10_xor a10 b10 k142 
+XOR y10_xor a10 b10 
 XOR y11_xor a11 b11 
-XOR y12_xor a12 b12 
+CHAO y12_xor a12 b12 k144 
 XOR y13_xor a13 b13 
 XOR y14_xor a14 b14 
 XOR y15_xor a15 b15 
-XOR y16_xor a16 b16 
-XOR y17_xor a17 b17 
+CHAO y16_xor a16 b16 k148 
+CHAO y17_xor a17 b17 k149 
 XOR y18_xor a18 b18 
 XOR y19_xor a19 b19 
 XOR y20_xor a20 b20 
-XOR y21_xor a21 b21 
-XOR y22_xor a22 b22 
+CHAO y21_xor a21 b21 k153 
+CHAO y22_xor a22 b22 k154 
 XOR y23_xor a23 b23 
 XOR y24_xor a24 b24 
 XOR y25_xor a25 b25 
 XOR y26_xor a26 b26 
 XOR y27_xor a27 b27 
 XOR y28_xor a28 b28 
-XOR y29_xor a29 b29 
-XOR y30_xor a30 b30 
+CHAO y29_xor a29 b29 k161 
+CHAO y30_xor a30 b30 k162 
 XOR y31_xor a31 b31 
-XOR b0_inv b0 c0 
-CHAO ins_addsub0_n1 a0 b0_inv k165 
-XOR y0_addsub ins_addsub0_n1 c0 
+CHAO b0_inv b0 c0 k164 
+XOR ins_addsub0_n1 a0 b0_inv 
+CHAO y0_addsub ins_addsub0_n1 c0 k166 
 AND ins_addsub0_n2 ins_addsub0_n1 c0 
-CHAO ins_addsub0_n3 a0 b0_inv k168 
+AND ins_addsub0_n3 a0 b0_inv 
 OR c1 ins_addsub0_n2 ins_addsub0_n3 
 XOR b1_inv b1 c0 
 XOR ins_addsub1_n1 a1 b1_inv 
-CHAO y1_addsub ins_addsub1_n1 c1 k172 
+XOR y1_addsub ins_addsub1_n1 c1 
 AND ins_addsub1_n2 ins_addsub1_n1 c1 
 AND ins_addsub1_n3 a1 b1_inv 
 OR c2 ins_addsub1_n2 ins_addsub1_n3 
-XOR b2_inv b2 c0 
+CHAO b2_inv b2 c0 k176 
 XOR ins_addsub2_n1 a2 b2_inv 
 XOR y2_addsub ins_addsub2_n1 c2 
 AND ins_addsub2_n2 ins_addsub2_n1 c2 
-CHAO ins_addsub2_n3 a2 b2_inv k180 
+AND ins_addsub2_n3 a2 b2_inv 
 OR c3 ins_addsub2_n2 ins_addsub2_n3 
 XOR b3_inv b3 c0 
 XOR ins_addsub3_n1 a3 b3_inv 
 XOR y3_addsub ins_addsub3_n1 c3 
-AND ins_addsub3_n2 ins_addsub3_n1 c3 
-AND ins_addsub3_n3 a3 b3_inv 
+CHAO ins_addsub3_n2 ins_addsub3_n1 c3 k185 
+CHAO ins_addsub3_n3 a3 b3_inv k186 
 OR c4 ins_addsub3_n2 ins_addsub3_n3 
 CHAO b4_inv b4 c0 k188 
 XOR ins_addsub4_n1 a4 b4_inv 
@@ -195,29 +195,29 @@ XOR b5_inv b5 c0
 XOR ins_addsub5_n1 a5 b5_inv 
 XOR y5_addsub ins_addsub5_n1 c5 
 AND ins_addsub5_n2 ins_addsub5_n1 c5 
-CHAO ins_addsub5_n3 a5 b5_inv k198 
+AND ins_addsub5_n3 a5 b5_inv 
 OR c6 ins_addsub5_n2 ins_addsub5_n3 
 CHAO b6_inv b6 c0 k200 
 CHAO ins_addsub6_n1 a6 b6_inv k201 
-CHAO y6_addsub ins_addsub6_n1 c6 k202 
+XOR y6_addsub ins_addsub6_n1 c6 
 AND ins_addsub6_n2 ins_addsub6_n1 c6 
 CHAO ins_addsub6_n3 a6 b6_inv k204 
-OR c7 ins_addsub6_n2 ins_addsub6_n3 
+CHAO c7 ins_addsub6_n2 ins_addsub6_n3 k205 
 XOR b7_inv b7 c0 
 CHAO ins_addsub7_n1 a7 b7_inv k207 
 XOR y7_addsub ins_addsub7_n1 c7 
 AND ins_addsub7_n2 ins_addsub7_n1 c7 
-CHAO ins_addsub7_n3 a7 b7_inv k210 
+AND ins_addsub7_n3 a7 b7_inv 
 OR c8 ins_addsub7_n2 ins_addsub7_n3 
-CHAO b8_inv b8 c0 k212 
+XOR b8_inv b8 c0 
 CHAO ins_addsub8_n1 a8 b8_inv k213 
-CHAO y8_addsub ins_addsub8_n1 c8 k214 
-AND ins_addsub8_n2 ins_addsub8_n1 c8 
-CHAO ins_addsub8_n3 a8 b8_inv k216 
+XOR y8_addsub ins_addsub8_n1 c8 
+CHAO ins_addsub8_n2 ins_addsub8_n1 c8 k215 
+AND ins_addsub8_n3 a8 b8_inv 
 OR c9 ins_addsub8_n2 ins_addsub8_n3 
-CHAO b9_inv b9 c0 k218 
+XOR b9_inv b9 c0 
 XOR ins_addsub9_n1 a9 b9_inv 
-CHAO y9_addsub ins_addsub9_n1 c9 k220 
+XOR y9_addsub ins_addsub9_n1 c9 
 AND ins_addsub9_n2 ins_addsub9_n1 c9 
 AND ins_addsub9_n3 a9 b9_inv 
 OR c10 ins_addsub9_n2 ins_addsub9_n3 
@@ -225,161 +225,161 @@ XOR b10_inv b10 c0
 XOR ins_addsub10_n1 a10 b10_inv 
 XOR y10_addsub ins_addsub10_n1 c10 
 AND ins_addsub10_n2 ins_addsub10_n1 c10 
-AND ins_addsub10_n3 a10 b10_inv 
+CHAO ins_addsub10_n3 a10 b10_inv k228 
 CHAO c11 ins_addsub10_n2 ins_addsub10_n3 k229 
-XOR b11_inv b11 c0 
+CHAO b11_inv b11 c0 k230 
 XOR ins_addsub11_n1 a11 b11_inv 
-CHAO y11_addsub ins_addsub11_n1 c11 k232 
+XOR y11_addsub ins_addsub11_n1 c11 
 AND ins_addsub11_n2 ins_addsub11_n1 c11 
 CHAO ins_addsub11_n3 a11 b11_inv k234 
-CHAO c12 ins_addsub11_n2 ins_addsub11_n3 k235 
-CHAO b12_inv b12 c0 k236 
+OR c12 ins_addsub11_n2 ins_addsub11_n3 
+XOR b12_inv b12 c0 
 XOR ins_addsub12_n1 a12 b12_inv 
 XOR y12_addsub ins_addsub12_n1 c12 
-AND ins_addsub12_n2 ins_addsub12_n1 c12 
+CHAO ins_addsub12_n2 ins_addsub12_n1 c12 k239 
 AND ins_addsub12_n3 a12 b12_inv 
 OR c13 ins_addsub12_n2 ins_addsub12_n3 
-XOR b13_inv b13 c0 
-XOR ins_addsub13_n1 a13 b13_inv 
+CHAO b13_inv b13 c0 k242 
+CHAO ins_addsub13_n1 a13 b13_inv k243 
 XOR y13_addsub ins_addsub13_n1 c13 
 AND ins_addsub13_n2 ins_addsub13_n1 c13 
-AND ins_addsub13_n3 a13 b13_inv 
+CHAO ins_addsub13_n3 a13 b13_inv k246 
 OR c14 ins_addsub13_n2 ins_addsub13_n3 
-XOR b14_inv b14 c0 
-XOR ins_addsub14_n1 a14 b14_inv 
+CHAO b14_inv b14 c0 k248 
+CHAO ins_addsub14_n1 a14 b14_inv k249 
 CHAO y14_addsub ins_addsub14_n1 c14 k250 
-AND ins_addsub14_n2 ins_addsub14_n1 c14 
+CHAO ins_addsub14_n2 ins_addsub14_n1 c14 k251 
 AND ins_addsub14_n3 a14 b14_inv 
 OR c15 ins_addsub14_n2 ins_addsub14_n3 
 XOR b15_inv b15 c0 
-XOR ins_addsub15_n1 a15 b15_inv 
+CHAO ins_addsub15_n1 a15 b15_inv k255 
 XOR y15_addsub ins_addsub15_n1 c15 
 AND ins_addsub15_n2 ins_addsub15_n1 c15 
-AND ins_addsub15_n3 a15 b15_inv 
+CHAO ins_addsub15_n3 a15 b15_inv k258 
 OR c16 ins_addsub15_n2 ins_addsub15_n3 
 XOR b16_inv b16 c0 
-XOR ins_addsub16_n1 a16 b16_inv 
-XOR y16_addsub ins_addsub16_n1 c16 
-CHAO ins_addsub16_n2 ins_addsub16_n1 c16 k263 
-AND ins_addsub16_n3 a16 b16_inv 
+CHAO ins_addsub16_n1 a16 b16_inv k261 
+CHAO y16_addsub ins_addsub16_n1 c16 k262 
+AND ins_addsub16_n2 ins_addsub16_n1 c16 
+CHAO ins_addsub16_n3 a16 b16_inv k264 
 OR c17 ins_addsub16_n2 ins_addsub16_n3 
 XOR b17_inv b17 c0 
 XOR ins_addsub17_n1 a17 b17_inv 
-XOR y17_addsub ins_addsub17_n1 c17 
+CHAO y17_addsub ins_addsub17_n1 c17 k268 
 AND ins_addsub17_n2 ins_addsub17_n1 c17 
 AND ins_addsub17_n3 a17 b17_inv 
 OR c18 ins_addsub17_n2 ins_addsub17_n3 
 XOR b18_inv b18 c0 
-XOR ins_addsub18_n1 a18 b18_inv 
-XOR y18_addsub ins_addsub18_n1 c18 
+CHAO ins_addsub18_n1 a18 b18_inv k273 
+CHAO y18_addsub ins_addsub18_n1 c18 k274 
 AND ins_addsub18_n2 ins_addsub18_n1 c18 
-AND ins_addsub18_n3 a18 b18_inv 
-CHAO c19 ins_addsub18_n2 ins_addsub18_n3 k277 
-CHAO b19_inv b19 c0 k278 
+CHAO ins_addsub18_n3 a18 b18_inv k276 
+OR c19 ins_addsub18_n2 ins_addsub18_n3 
+XOR b19_inv b19 c0 
 XOR ins_addsub19_n1 a19 b19_inv 
 XOR y19_addsub ins_addsub19_n1 c19 
 AND ins_addsub19_n2 ins_addsub19_n1 c19 
-CHAO ins_addsub19_n3 a19 b19_inv k282 
+AND ins_addsub19_n3 a19 b19_inv 
 CHAO c20 ins_addsub19_n2 ins_addsub19_n3 k283 
-XOR b20_inv b20 c0 
-CHAO ins_addsub20_n1 a20 b20_inv k285 
+CHAO b20_inv b20 c0 k284 
+XOR ins_addsub20_n1 a20 b20_inv 
 XOR y20_addsub ins_addsub20_n1 c20 
 CHAO ins_addsub20_n2 ins_addsub20_n1 c20 k287 
-CHAO ins_addsub20_n3 a20 b20_inv k288 
-OR c21 ins_addsub20_n2 ins_addsub20_n3 
+AND ins_addsub20_n3 a20 b20_inv 
+CHAO c21 ins_addsub20_n2 ins_addsub20_n3 k289 
 XOR b21_inv b21 c0 
 XOR ins_addsub21_n1 a21 b21_inv 
 XOR y21_addsub ins_addsub21_n1 c21 
 AND ins_addsub21_n2 ins_addsub21_n1 c21 
-CHAO ins_addsub21_n3 a21 b21_inv k294 
+AND ins_addsub21_n3 a21 b21_inv 
 OR c22 ins_addsub21_n2 ins_addsub21_n3 
-XOR b22_inv b22 c0 
+CHAO b22_inv b22 c0 k296 
 XOR ins_addsub22_n1 a22 b22_inv 
 XOR y22_addsub ins_addsub22_n1 c22 
 AND ins_addsub22_n2 ins_addsub22_n1 c22 
 AND ins_addsub22_n3 a22 b22_inv 
 OR c23 ins_addsub22_n2 ins_addsub22_n3 
-XOR b23_inv b23 c0 
+CHAO b23_inv b23 c0 k302 
 XOR ins_addsub23_n1 a23 b23_inv 
 XOR y23_addsub ins_addsub23_n1 c23 
-CHAO ins_addsub23_n2 ins_addsub23_n1 c23 k305 
+AND ins_addsub23_n2 ins_addsub23_n1 c23 
 AND ins_addsub23_n3 a23 b23_inv 
 OR c24 ins_addsub23_n2 ins_addsub23_n3 
-CHAO b24_inv b24 c0 k308 
-XOR ins_addsub24_n1 a24 b24_inv 
-CHAO y24_addsub ins_addsub24_n1 c24 k310 
-CHAO ins_addsub24_n2 ins_addsub24_n1 c24 k311 
-CHAO ins_addsub24_n3 a24 b24_inv k312 
-CHAO c25 ins_addsub24_n2 ins_addsub24_n3 k313 
-XOR b25_inv b25 c0 
+XOR b24_inv b24 c0 
+CHAO ins_addsub24_n1 a24 b24_inv k309 
+XOR y24_addsub ins_addsub24_n1 c24 
+AND ins_addsub24_n2 ins_addsub24_n1 c24 
+AND ins_addsub24_n3 a24 b24_inv 
+OR c25 ins_addsub24_n2 ins_addsub24_n3 
+CHAO b25_inv b25 c0 k314 
 XOR ins_addsub25_n1 a25 b25_inv 
 XOR y25_addsub ins_addsub25_n1 c25 
 CHAO ins_addsub25_n2 ins_addsub25_n1 c25 k317 
-AND ins_addsub25_n3 a25 b25_inv 
+CHAO ins_addsub25_n3 a25 b25_inv k318 
 OR c26 ins_addsub25_n2 ins_addsub25_n3 
 XOR b26_inv b26 c0 
 XOR ins_addsub26_n1 a26 b26_inv 
-XOR y26_addsub ins_addsub26_n1 c26 
+CHAO y26_addsub ins_addsub26_n1 c26 k322 
 CHAO ins_addsub26_n2 ins_addsub26_n1 c26 k323 
 AND ins_addsub26_n3 a26 b26_inv 
-CHAO c27 ins_addsub26_n2 ins_addsub26_n3 k325 
+OR c27 ins_addsub26_n2 ins_addsub26_n3 
 CHAO b27_inv b27 c0 k326 
-CHAO ins_addsub27_n1 a27 b27_inv k327 
+XOR ins_addsub27_n1 a27 b27_inv 
 XOR y27_addsub ins_addsub27_n1 c27 
-CHAO ins_addsub27_n2 ins_addsub27_n1 c27 k329 
+AND ins_addsub27_n2 ins_addsub27_n1 c27 
 AND ins_addsub27_n3 a27 b27_inv 
-CHAO c28 ins_addsub27_n2 ins_addsub27_n3 k331 
-CHAO b28_inv b28 c0 k332 
-CHAO ins_addsub28_n1 a28 b28_inv k333 
+OR c28 ins_addsub27_n2 ins_addsub27_n3 
+XOR b28_inv b28 c0 
+XOR ins_addsub28_n1 a28 b28_inv 
 XOR y28_addsub ins_addsub28_n1 c28 
 AND ins_addsub28_n2 ins_addsub28_n1 c28 
 AND ins_addsub28_n3 a28 b28_inv 
 OR c29 ins_addsub28_n2 ins_addsub28_n3 
-XOR b29_inv b29 c0 
-XOR ins_addsub29_n1 a29 b29_inv 
-XOR y29_addsub ins_addsub29_n1 c29 
+CHAO b29_inv b29 c0 k338 
+CHAO ins_addsub29_n1 a29 b29_inv k339 
+CHAO y29_addsub ins_addsub29_n1 c29 k340 
 AND ins_addsub29_n2 ins_addsub29_n1 c29 
 AND ins_addsub29_n3 a29 b29_inv 
-OR c30 ins_addsub29_n2 ins_addsub29_n3 
+CHAO c30 ins_addsub29_n2 ins_addsub29_n3 k343 
 XOR b30_inv b30 c0 
 XOR ins_addsub30_n1 a30 b30_inv 
-XOR y30_addsub ins_addsub30_n1 c30 
+CHAO y30_addsub ins_addsub30_n1 c30 k346 
 AND ins_addsub30_n2 ins_addsub30_n1 c30 
 CHAO ins_addsub30_n3 a30 b30_inv k348 
-CHAO c31 ins_addsub30_n2 ins_addsub30_n3 k349 
+OR c31 ins_addsub30_n2 ins_addsub30_n3 
 XOR b31_inv b31 c0 
 XOR ins_addsub31_n1 a31 b31_inv 
 XOR y31_addsub ins_addsub31_n1 c31 
 AND ins_addsub31_n2 ins_addsub31_n1 c31 
 AND ins_addsub31_n3 a31 b31_inv 
 OR c32 ins_addsub31_n2 ins_addsub31_n3 
-AND ins_shl0_0_n1 inv$b0 a0 
+CHAO ins_shl0_0_n1 inv$b0 a0 k356 
 AND ins_shl0_0_n2 b0 LO 
-OR inode_sl0_0 ins_shl0_0_n1 ins_shl0_0_n2 
+CHAO inode_sl0_0 ins_shl0_0_n1 ins_shl0_0_n2 k358 
 AND ins_shl0_1_n1 inv$b0 a1 
 AND ins_shl0_1_n2 b0 a0 
 OR inode_sl0_1 ins_shl0_1_n1 ins_shl0_1_n2 
 AND ins_shl0_2_n1 inv$b0 a2 
-AND ins_shl0_2_n2 b0 a1 
+CHAO ins_shl0_2_n2 b0 a1 k363 
 CHAO inode_sl0_2 ins_shl0_2_n1 ins_shl0_2_n2 k364 
 AND ins_shl0_3_n1 inv$b0 a3 
-CHAO ins_shl0_3_n2 b0 a2 k366 
+AND ins_shl0_3_n2 b0 a2 
 OR inode_sl0_3 ins_shl0_3_n1 ins_shl0_3_n2 
-AND ins_shl0_4_n1 inv$b0 a4 
+CHAO ins_shl0_4_n1 inv$b0 a4 k368 
 AND ins_shl0_4_n2 b0 a3 
 OR inode_sl0_4 ins_shl0_4_n1 ins_shl0_4_n2 
-CHAO ins_shl0_5_n1 inv$b0 a5 k371 
+AND ins_shl0_5_n1 inv$b0 a5 
 AND ins_shl0_5_n2 b0 a4 
-OR inode_sl0_5 ins_shl0_5_n1 ins_shl0_5_n2 
-CHAO ins_shl0_6_n1 inv$b0 a6 k374 
+CHAO inode_sl0_5 ins_shl0_5_n1 ins_shl0_5_n2 k373 
+AND ins_shl0_6_n1 inv$b0 a6 
 AND ins_shl0_6_n2 b0 a5 
-CHAO inode_sl0_6 ins_shl0_6_n1 ins_shl0_6_n2 k376 
+OR inode_sl0_6 ins_shl0_6_n1 ins_shl0_6_n2 
 AND ins_shl0_7_n1 inv$b0 a7 
 AND ins_shl0_7_n2 b0 a6 
-OR inode_sl0_7 ins_shl0_7_n1 ins_shl0_7_n2 
-CHAO ins_shl0_8_n1 inv$b0 a8 k380 
+CHAO inode_sl0_7 ins_shl0_7_n1 ins_shl0_7_n2 k379 
+AND ins_shl0_8_n1 inv$b0 a8 
 AND ins_shl0_8_n2 b0 a7 
-CHAO inode_sl0_8 ins_shl0_8_n1 ins_shl0_8_n2 k382 
+OR inode_sl0_8 ins_shl0_8_n1 ins_shl0_8_n2 
 AND ins_shl0_9_n1 inv$b0 a9 
 AND ins_shl0_9_n2 b0 a8 
 OR inode_sl0_9 ins_shl0_9_n1 ins_shl0_9_n2 
@@ -388,38 +388,38 @@ AND ins_shl0_10_n2 b0 a9
 OR inode_sl0_10 ins_shl0_10_n1 ins_shl0_10_n2 
 AND ins_shl0_11_n1 inv$b0 a11 
 AND ins_shl0_11_n2 b0 a10 
-CHAO inode_sl0_11 ins_shl0_11_n1 ins_shl0_11_n2 k391 
+OR inode_sl0_11 ins_shl0_11_n1 ins_shl0_11_n2 
 AND ins_shl0_12_n1 inv$b0 a12 
-AND ins_shl0_12_n2 b0 a11 
+CHAO ins_shl0_12_n2 b0 a11 k393 
 OR inode_sl0_12 ins_shl0_12_n1 ins_shl0_12_n2 
-AND ins_shl0_13_n1 inv$b0 a13 
+CHAO ins_shl0_13_n1 inv$b0 a13 k395 
 AND ins_shl0_13_n2 b0 a12 
 CHAO inode_sl0_13 ins_shl0_13_n1 ins_shl0_13_n2 k397 
 AND ins_shl0_14_n1 inv$b0 a14 
 AND ins_shl0_14_n2 b0 a13 
 OR inode_sl0_14 ins_shl0_14_n1 ins_shl0_14_n2 
-AND ins_shl0_15_n1 inv$b0 a15 
+CHAO ins_shl0_15_n1 inv$b0 a15 k401 
 AND ins_shl0_15_n2 b0 a14 
 OR inode_sl0_15 ins_shl0_15_n1 ins_shl0_15_n2 
-CHAO ins_shl0_16_n1 inv$b0 a16 k404 
+AND ins_shl0_16_n1 inv$b0 a16 
 AND ins_shl0_16_n2 b0 a15 
 OR inode_sl0_16 ins_shl0_16_n1 ins_shl0_16_n2 
 AND ins_shl0_17_n1 inv$b0 a17 
-CHAO ins_shl0_17_n2 b0 a16 k408 
-OR inode_sl0_17 ins_shl0_17_n1 ins_shl0_17_n2 
+AND ins_shl0_17_n2 b0 a16 
+CHAO inode_sl0_17 ins_shl0_17_n1 ins_shl0_17_n2 k409 
 AND ins_shl0_18_n1 inv$b0 a18 
 AND ins_shl0_18_n2 b0 a17 
 OR inode_sl0_18 ins_shl0_18_n1 ins_shl0_18_n2 
 AND ins_shl0_19_n1 inv$b0 a19 
-CHAO ins_shl0_19_n2 b0 a18 k414 
+AND ins_shl0_19_n2 b0 a18 
 OR inode_sl0_19 ins_shl0_19_n1 ins_shl0_19_n2 
 AND ins_shl0_20_n1 inv$b0 a20 
-CHAO ins_shl0_20_n2 b0 a19 k417 
+AND ins_shl0_20_n2 b0 a19 
 CHAO inode_sl0_20 ins_shl0_20_n1 ins_shl0_20_n2 k418 
 AND ins_shl0_21_n1 inv$b0 a21 
 AND ins_shl0_21_n2 b0 a20 
-CHAO inode_sl0_21 ins_shl0_21_n1 ins_shl0_21_n2 k421 
-AND ins_shl0_22_n1 inv$b0 a22 
+OR inode_sl0_21 ins_shl0_21_n1 ins_shl0_21_n2 
+CHAO ins_shl0_22_n1 inv$b0 a22 k422 
 AND ins_shl0_22_n2 b0 a21 
 OR inode_sl0_22 ins_shl0_22_n1 ins_shl0_22_n2 
 AND ins_shl0_23_n1 inv$b0 a23 
@@ -430,95 +430,95 @@ AND ins_shl0_24_n2 b0 a23
 OR inode_sl0_24 ins_shl0_24_n1 ins_shl0_24_n2 
 AND ins_shl0_25_n1 inv$b0 a25 
 AND ins_shl0_25_n2 b0 a24 
-OR inode_sl0_25 ins_shl0_25_n1 ins_shl0_25_n2 
+CHAO inode_sl0_25 ins_shl0_25_n1 ins_shl0_25_n2 k433 
 AND ins_shl0_26_n1 inv$b0 a26 
-CHAO ins_shl0_26_n2 b0 a25 k435 
-CHAO inode_sl0_26 ins_shl0_26_n1 ins_shl0_26_n2 k436 
-CHAO ins_shl0_27_n1 inv$b0 a27 k437 
+AND ins_shl0_26_n2 b0 a25 
+OR inode_sl0_26 ins_shl0_26_n1 ins_shl0_26_n2 
+AND ins_shl0_27_n1 inv$b0 a27 
 AND ins_shl0_27_n2 b0 a26 
-OR inode_sl0_27 ins_shl0_27_n1 ins_shl0_27_n2 
-AND ins_shl0_28_n1 inv$b0 a28 
-CHAO ins_shl0_28_n2 b0 a27 k441 
+CHAO inode_sl0_27 ins_shl0_27_n1 ins_shl0_27_n2 k439 
+CHAO ins_shl0_28_n1 inv$b0 a28 k440 
+AND ins_shl0_28_n2 b0 a27 
 OR inode_sl0_28 ins_shl0_28_n1 ins_shl0_28_n2 
-AND ins_shl0_29_n1 inv$b0 a29 
-CHAO ins_shl0_29_n2 b0 a28 k444 
-OR inode_sl0_29 ins_shl0_29_n1 ins_shl0_29_n2 
+CHAO ins_shl0_29_n1 inv$b0 a29 k443 
+AND ins_shl0_29_n2 b0 a28 
+CHAO inode_sl0_29 ins_shl0_29_n1 ins_shl0_29_n2 k445 
 AND ins_shl0_30_n1 inv$b0 a30 
 AND ins_shl0_30_n2 b0 a29 
-CHAO inode_sl0_30 ins_shl0_30_n1 ins_shl0_30_n2 k448 
+OR inode_sl0_30 ins_shl0_30_n1 ins_shl0_30_n2 
 AND ins_shl0_31_n1 inv$b0 a31 
 AND ins_shl0_31_n2 b0 a30 
 OR inode_sl0_31 ins_shl0_31_n1 ins_shl0_31_n2 
 AND ins_shl1_0_n1 inv$b1 inode_sl0_0 
-CHAO ins_shl1_0_n2 b1 LO k453 
+AND ins_shl1_0_n2 b1 LO 
 OR inode_sl1_0 ins_shl1_0_n1 ins_shl1_0_n2 
-CHAO ins_shl1_1_n1 inv$b1 inode_sl0_1 k455 
-AND ins_shl1_1_n2 b1 LO 
+AND ins_shl1_1_n1 inv$b1 inode_sl0_1 
+CHAO ins_shl1_1_n2 b1 LO k456 
 OR inode_sl1_1 ins_shl1_1_n1 ins_shl1_1_n2 
-CHAO ins_shl1_2_n1 inv$b1 inode_sl0_2 k458 
+AND ins_shl1_2_n1 inv$b1 inode_sl0_2 
 AND ins_shl1_2_n2 b1 inode_sl0_0 
 CHAO inode_sl1_2 ins_shl1_2_n1 ins_shl1_2_n2 k460 
-CHAO ins_shl1_3_n1 inv$b1 inode_sl0_3 k461 
-CHAO ins_shl1_3_n2 b1 inode_sl0_1 k462 
+AND ins_shl1_3_n1 inv$b1 inode_sl0_3 
+AND ins_shl1_3_n2 b1 inode_sl0_1 
 OR inode_sl1_3 ins_shl1_3_n1 ins_shl1_3_n2 
 AND ins_shl1_4_n1 inv$b1 inode_sl0_4 
 AND ins_shl1_4_n2 b1 inode_sl0_2 
 OR inode_sl1_4 ins_shl1_4_n1 ins_shl1_4_n2 
 AND ins_shl1_5_n1 inv$b1 inode_sl0_5 
 AND ins_shl1_5_n2 b1 inode_sl0_3 
-OR inode_sl1_5 ins_shl1_5_n1 ins_shl1_5_n2 
+CHAO inode_sl1_5 ins_shl1_5_n1 ins_shl1_5_n2 k469 
 AND ins_shl1_6_n1 inv$b1 inode_sl0_6 
-CHAO ins_shl1_6_n2 b1 inode_sl0_4 k471 
+AND ins_shl1_6_n2 b1 inode_sl0_4 
 OR inode_sl1_6 ins_shl1_6_n1 ins_shl1_6_n2 
 CHAO ins_shl1_7_n1 inv$b1 inode_sl0_7 k473 
-AND ins_shl1_7_n2 b1 inode_sl0_5 
+CHAO ins_shl1_7_n2 b1 inode_sl0_5 k474 
 OR inode_sl1_7 ins_shl1_7_n1 ins_shl1_7_n2 
-CHAO ins_shl1_8_n1 inv$b1 inode_sl0_8 k476 
+AND ins_shl1_8_n1 inv$b1 inode_sl0_8 
 AND ins_shl1_8_n2 b1 inode_sl0_6 
 OR inode_sl1_8 ins_shl1_8_n1 ins_shl1_8_n2 
 AND ins_shl1_9_n1 inv$b1 inode_sl0_9 
 AND ins_shl1_9_n2 b1 inode_sl0_7 
 CHAO inode_sl1_9 ins_shl1_9_n1 ins_shl1_9_n2 k481 
-AND ins_shl1_10_n1 inv$b1 inode_sl0_10 
+CHAO ins_shl1_10_n1 inv$b1 inode_sl0_10 k482 
 AND ins_shl1_10_n2 b1 inode_sl0_8 
-CHAO inode_sl1_10 ins_shl1_10_n1 ins_shl1_10_n2 k484 
-CHAO ins_shl1_11_n1 inv$b1 inode_sl0_11 k485 
+OR inode_sl1_10 ins_shl1_10_n1 ins_shl1_10_n2 
+AND ins_shl1_11_n1 inv$b1 inode_sl0_11 
 AND ins_shl1_11_n2 b1 inode_sl0_9 
 CHAO inode_sl1_11 ins_shl1_11_n1 ins_shl1_11_n2 k487 
-AND ins_shl1_12_n1 inv$b1 inode_sl0_12 
+CHAO ins_shl1_12_n1 inv$b1 inode_sl0_12 k488 
 AND ins_shl1_12_n2 b1 inode_sl0_10 
 CHAO inode_sl1_12 ins_shl1_12_n1 ins_shl1_12_n2 k490 
-AND ins_shl1_13_n1 inv$b1 inode_sl0_13 
+CHAO ins_shl1_13_n1 inv$b1 inode_sl0_13 k491 
 AND ins_shl1_13_n2 b1 inode_sl0_11 
-CHAO inode_sl1_13 ins_shl1_13_n1 ins_shl1_13_n2 k493 
-CHAO ins_shl1_14_n1 inv$b1 inode_sl0_14 k494 
+OR inode_sl1_13 ins_shl1_13_n1 ins_shl1_13_n2 
+AND ins_shl1_14_n1 inv$b1 inode_sl0_14 
 AND ins_shl1_14_n2 b1 inode_sl0_12 
-OR inode_sl1_14 ins_shl1_14_n1 ins_shl1_14_n2 
-CHAO ins_shl1_15_n1 inv$b1 inode_sl0_15 k497 
-CHAO ins_shl1_15_n2 b1 inode_sl0_13 k498 
-OR inode_sl1_15 ins_shl1_15_n1 ins_shl1_15_n2 
-AND ins_shl1_16_n1 inv$b1 inode_sl0_16 
+CHAO inode_sl1_14 ins_shl1_14_n1 ins_shl1_14_n2 k496 
+AND ins_shl1_15_n1 inv$b1 inode_sl0_15 
+AND ins_shl1_15_n2 b1 inode_sl0_13 
+CHAO inode_sl1_15 ins_shl1_15_n1 ins_shl1_15_n2 k499 
+CHAO ins_shl1_16_n1 inv$b1 inode_sl0_16 k500 
 AND ins_shl1_16_n2 b1 inode_sl0_14 
 OR inode_sl1_16 ins_shl1_16_n1 ins_shl1_16_n2 
-CHAO ins_shl1_17_n1 inv$b1 inode_sl0_17 k503 
+AND ins_shl1_17_n1 inv$b1 inode_sl0_17 
 AND ins_shl1_17_n2 b1 inode_sl0_15 
-OR inode_sl1_17 ins_shl1_17_n1 ins_shl1_17_n2 
+CHAO inode_sl1_17 ins_shl1_17_n1 ins_shl1_17_n2 k505 
 AND ins_shl1_18_n1 inv$b1 inode_sl0_18 
-AND ins_shl1_18_n2 b1 inode_sl0_16 
+CHAO ins_shl1_18_n2 b1 inode_sl0_16 k507 
 OR inode_sl1_18 ins_shl1_18_n1 ins_shl1_18_n2 
-AND ins_shl1_19_n1 inv$b1 inode_sl0_19 
+CHAO ins_shl1_19_n1 inv$b1 inode_sl0_19 k509 
 AND ins_shl1_19_n2 b1 inode_sl0_17 
 OR inode_sl1_19 ins_shl1_19_n1 ins_shl1_19_n2 
-CHAO ins_shl1_20_n1 inv$b1 inode_sl0_20 k512 
-AND ins_shl1_20_n2 b1 inode_sl0_18 
-OR inode_sl1_20 ins_shl1_20_n1 ins_shl1_20_n2 
+AND ins_shl1_20_n1 inv$b1 inode_sl0_20 
+CHAO ins_shl1_20_n2 b1 inode_sl0_18 k513 
+CHAO inode_sl1_20 ins_shl1_20_n1 ins_shl1_20_n2 k514 
 AND ins_shl1_21_n1 inv$b1 inode_sl0_21 
-CHAO ins_shl1_21_n2 b1 inode_sl0_19 k516 
+AND ins_shl1_21_n2 b1 inode_sl0_19 
 OR inode_sl1_21 ins_shl1_21_n1 ins_shl1_21_n2 
-AND ins_shl1_22_n1 inv$b1 inode_sl0_22 
+CHAO ins_shl1_22_n1 inv$b1 inode_sl0_22 k518 
 AND ins_shl1_22_n2 b1 inode_sl0_20 
 OR inode_sl1_22 ins_shl1_22_n1 ins_shl1_22_n2 
-AND ins_shl1_23_n1 inv$b1 inode_sl0_23 
+CHAO ins_shl1_23_n1 inv$b1 inode_sl0_23 k521 
 AND ins_shl1_23_n2 b1 inode_sl0_21 
 OR inode_sl1_23 ins_shl1_23_n1 ins_shl1_23_n2 
 AND ins_shl1_24_n1 inv$b1 inode_sl0_24 
@@ -527,116 +527,116 @@ OR inode_sl1_24 ins_shl1_24_n1 ins_shl1_24_n2
 AND ins_shl1_25_n1 inv$b1 inode_sl0_25 
 AND ins_shl1_25_n2 b1 inode_sl0_23 
 OR inode_sl1_25 ins_shl1_25_n1 ins_shl1_25_n2 
-CHAO ins_shl1_26_n1 inv$b1 inode_sl0_26 k530 
-AND ins_shl1_26_n2 b1 inode_sl0_24 
+AND ins_shl1_26_n1 inv$b1 inode_sl0_26 
+CHAO ins_shl1_26_n2 b1 inode_sl0_24 k531 
 OR inode_sl1_26 ins_shl1_26_n1 ins_shl1_26_n2 
 AND ins_shl1_27_n1 inv$b1 inode_sl0_27 
-AND ins_shl1_27_n2 b1 inode_sl0_25 
+CHAO ins_shl1_27_n2 b1 inode_sl0_25 k534 
 OR inode_sl1_27 ins_shl1_27_n1 ins_shl1_27_n2 
-AND ins_shl1_28_n1 inv$b1 inode_sl0_28 
+CHAO ins_shl1_28_n1 inv$b1 inode_sl0_28 k536 
 AND ins_shl1_28_n2 b1 inode_sl0_26 
 OR inode_sl1_28 ins_shl1_28_n1 ins_shl1_28_n2 
-AND ins_shl1_29_n1 inv$b1 inode_sl0_29 
-AND ins_shl1_29_n2 b1 inode_sl0_27 
-OR inode_sl1_29 ins_shl1_29_n1 ins_shl1_29_n2 
+CHAO ins_shl1_29_n1 inv$b1 inode_sl0_29 k539 
+CHAO ins_shl1_29_n2 b1 inode_sl0_27 k540 
+CHAO inode_sl1_29 ins_shl1_29_n1 ins_shl1_29_n2 k541 
 AND ins_shl1_30_n1 inv$b1 inode_sl0_30 
-AND ins_shl1_30_n2 b1 inode_sl0_28 
-CHAO inode_sl1_30 ins_shl1_30_n1 ins_shl1_30_n2 k544 
+CHAO ins_shl1_30_n2 b1 inode_sl0_28 k543 
+OR inode_sl1_30 ins_shl1_30_n1 ins_shl1_30_n2 
 AND ins_shl1_31_n1 inv$b1 inode_sl0_31 
 AND ins_shl1_31_n2 b1 inode_sl0_29 
-CHAO inode_sl1_31 ins_shl1_31_n1 ins_shl1_31_n2 k547 
-AND ins_shl2_0_n1 inv$b2 inode_sl1_0 
+OR inode_sl1_31 ins_shl1_31_n1 ins_shl1_31_n2 
+CHAO ins_shl2_0_n1 inv$b2 inode_sl1_0 k548 
 AND ins_shl2_0_n2 b2 LO 
-CHAO inode_sl2_0 ins_shl2_0_n1 ins_shl2_0_n2 k550 
-AND ins_shl2_1_n1 inv$b2 inode_sl1_1 
+OR inode_sl2_0 ins_shl2_0_n1 ins_shl2_0_n2 
+CHAO ins_shl2_1_n1 inv$b2 inode_sl1_1 k551 
 AND ins_shl2_1_n2 b2 LO 
 OR inode_sl2_1 ins_shl2_1_n1 ins_shl2_1_n2 
-CHAO ins_shl2_2_n1 inv$b2 inode_sl1_2 k554 
-CHAO ins_shl2_2_n2 b2 LO k555 
+AND ins_shl2_2_n1 inv$b2 inode_sl1_2 
+AND ins_shl2_2_n2 b2 LO 
 OR inode_sl2_2 ins_shl2_2_n1 ins_shl2_2_n2 
 AND ins_shl2_3_n1 inv$b2 inode_sl1_3 
-CHAO ins_shl2_3_n2 b2 LO k558 
+AND ins_shl2_3_n2 b2 LO 
 OR inode_sl2_3 ins_shl2_3_n1 ins_shl2_3_n2 
 AND ins_shl2_4_n1 inv$b2 inode_sl1_4 
-CHAO ins_shl2_4_n2 b2 inode_sl1_0 k561 
+AND ins_shl2_4_n2 b2 inode_sl1_0 
 CHAO inode_sl2_4 ins_shl2_4_n1 ins_shl2_4_n2 k562 
 AND ins_shl2_5_n1 inv$b2 inode_sl1_5 
 AND ins_shl2_5_n2 b2 inode_sl1_1 
-OR inode_sl2_5 ins_shl2_5_n1 ins_shl2_5_n2 
+CHAO inode_sl2_5 ins_shl2_5_n1 ins_shl2_5_n2 k565 
 AND ins_shl2_6_n1 inv$b2 inode_sl1_6 
-AND ins_shl2_6_n2 b2 inode_sl1_2 
-OR inode_sl2_6 ins_shl2_6_n1 ins_shl2_6_n2 
-AND ins_shl2_7_n1 inv$b2 inode_sl1_7 
+CHAO ins_shl2_6_n2 b2 inode_sl1_2 k567 
+CHAO inode_sl2_6 ins_shl2_6_n1 ins_shl2_6_n2 k568 
+CHAO ins_shl2_7_n1 inv$b2 inode_sl1_7 k569 
 AND ins_shl2_7_n2 b2 inode_sl1_3 
-CHAO inode_sl2_7 ins_shl2_7_n1 ins_shl2_7_n2 k571 
-AND ins_shl2_8_n1 inv$b2 inode_sl1_8 
-AND ins_shl2_8_n2 b2 inode_sl1_4 
+OR inode_sl2_7 ins_shl2_7_n1 ins_shl2_7_n2 
+CHAO ins_shl2_8_n1 inv$b2 inode_sl1_8 k572 
+CHAO ins_shl2_8_n2 b2 inode_sl1_4 k573 
 OR inode_sl2_8 ins_shl2_8_n1 ins_shl2_8_n2 
 AND ins_shl2_9_n1 inv$b2 inode_sl1_9 
 CHAO ins_shl2_9_n2 b2 inode_sl1_5 k576 
-CHAO inode_sl2_9 ins_shl2_9_n1 ins_shl2_9_n2 k577 
+OR inode_sl2_9 ins_shl2_9_n1 ins_shl2_9_n2 
 AND ins_shl2_10_n1 inv$b2 inode_sl1_10 
 AND ins_shl2_10_n2 b2 inode_sl1_6 
 OR inode_sl2_10 ins_shl2_10_n1 ins_shl2_10_n2 
 AND ins_shl2_11_n1 inv$b2 inode_sl1_11 
-CHAO ins_shl2_11_n2 b2 inode_sl1_7 k582 
+AND ins_shl2_11_n2 b2 inode_sl1_7 
 OR inode_sl2_11 ins_shl2_11_n1 ins_shl2_11_n2 
 CHAO ins_shl2_12_n1 inv$b2 inode_sl1_12 k584 
 AND ins_shl2_12_n2 b2 inode_sl1_8 
 OR inode_sl2_12 ins_shl2_12_n1 ins_shl2_12_n2 
 AND ins_shl2_13_n1 inv$b2 inode_sl1_13 
 AND ins_shl2_13_n2 b2 inode_sl1_9 
-OR inode_sl2_13 ins_shl2_13_n1 ins_shl2_13_n2 
+CHAO inode_sl2_13 ins_shl2_13_n1 ins_shl2_13_n2 k589 
 AND ins_shl2_14_n1 inv$b2 inode_sl1_14 
-CHAO ins_shl2_14_n2 b2 inode_sl1_10 k591 
+AND ins_shl2_14_n2 b2 inode_sl1_10 
 OR inode_sl2_14 ins_shl2_14_n1 ins_shl2_14_n2 
 AND ins_shl2_15_n1 inv$b2 inode_sl1_15 
 AND ins_shl2_15_n2 b2 inode_sl1_11 
 OR inode_sl2_15 ins_shl2_15_n1 ins_shl2_15_n2 
-CHAO ins_shl2_16_n1 inv$b2 inode_sl1_16 k596 
+AND ins_shl2_16_n1 inv$b2 inode_sl1_16 
 AND ins_shl2_16_n2 b2 inode_sl1_12 
-OR inode_sl2_16 ins_shl2_16_n1 ins_shl2_16_n2 
+CHAO inode_sl2_16 ins_shl2_16_n1 ins_shl2_16_n2 k598 
 AND ins_shl2_17_n1 inv$b2 inode_sl1_17 
 AND ins_shl2_17_n2 b2 inode_sl1_13 
 OR inode_sl2_17 ins_shl2_17_n1 ins_shl2_17_n2 
 CHAO ins_shl2_18_n1 inv$b2 inode_sl1_18 k602 
-AND ins_shl2_18_n2 b2 inode_sl1_14 
+CHAO ins_shl2_18_n2 b2 inode_sl1_14 k603 
 OR inode_sl2_18 ins_shl2_18_n1 ins_shl2_18_n2 
-AND ins_shl2_19_n1 inv$b2 inode_sl1_19 
-CHAO ins_shl2_19_n2 b2 inode_sl1_15 k606 
-CHAO inode_sl2_19 ins_shl2_19_n1 ins_shl2_19_n2 k607 
-CHAO ins_shl2_20_n1 inv$b2 inode_sl1_20 k608 
+CHAO ins_shl2_19_n1 inv$b2 inode_sl1_19 k605 
+AND ins_shl2_19_n2 b2 inode_sl1_15 
+OR inode_sl2_19 ins_shl2_19_n1 ins_shl2_19_n2 
+AND ins_shl2_20_n1 inv$b2 inode_sl1_20 
 AND ins_shl2_20_n2 b2 inode_sl1_16 
 OR inode_sl2_20 ins_shl2_20_n1 ins_shl2_20_n2 
-CHAO ins_shl2_21_n1 inv$b2 inode_sl1_21 k611 
-AND ins_shl2_21_n2 b2 inode_sl1_17 
-OR inode_sl2_21 ins_shl2_21_n1 ins_shl2_21_n2 
+AND ins_shl2_21_n1 inv$b2 inode_sl1_21 
+CHAO ins_shl2_21_n2 b2 inode_sl1_17 k612 
+CHAO inode_sl2_21 ins_shl2_21_n1 ins_shl2_21_n2 k613 
 AND ins_shl2_22_n1 inv$b2 inode_sl1_22 
-AND ins_shl2_22_n2 b2 inode_sl1_18 
+CHAO ins_shl2_22_n2 b2 inode_sl1_18 k615 
 OR inode_sl2_22 ins_shl2_22_n1 ins_shl2_22_n2 
 AND ins_shl2_23_n1 inv$b2 inode_sl1_23 
-CHAO ins_shl2_23_n2 b2 inode_sl1_19 k618 
-CHAO inode_sl2_23 ins_shl2_23_n1 ins_shl2_23_n2 k619 
-CHAO ins_shl2_24_n1 inv$b2 inode_sl1_24 k620 
+AND ins_shl2_23_n2 b2 inode_sl1_19 
+OR inode_sl2_23 ins_shl2_23_n1 ins_shl2_23_n2 
+AND ins_shl2_24_n1 inv$b2 inode_sl1_24 
 AND ins_shl2_24_n2 b2 inode_sl1_20 
 OR inode_sl2_24 ins_shl2_24_n1 ins_shl2_24_n2 
 AND ins_shl2_25_n1 inv$b2 inode_sl1_25 
 AND ins_shl2_25_n2 b2 inode_sl1_21 
-OR inode_sl2_25 ins_shl2_25_n1 ins_shl2_25_n2 
+CHAO inode_sl2_25 ins_shl2_25_n1 ins_shl2_25_n2 k625 
 AND ins_shl2_26_n1 inv$b2 inode_sl1_26 
-CHAO ins_shl2_26_n2 b2 inode_sl1_22 k627 
-OR inode_sl2_26 ins_shl2_26_n1 ins_shl2_26_n2 
+AND ins_shl2_26_n2 b2 inode_sl1_22 
+CHAO inode_sl2_26 ins_shl2_26_n1 ins_shl2_26_n2 k628 
 AND ins_shl2_27_n1 inv$b2 inode_sl1_27 
 AND ins_shl2_27_n2 b2 inode_sl1_23 
 OR inode_sl2_27 ins_shl2_27_n1 ins_shl2_27_n2 
 AND ins_shl2_28_n1 inv$b2 inode_sl1_28 
 AND ins_shl2_28_n2 b2 inode_sl1_24 
-OR inode_sl2_28 ins_shl2_28_n1 ins_shl2_28_n2 
+CHAO inode_sl2_28 ins_shl2_28_n1 ins_shl2_28_n2 k634 
 AND ins_shl2_29_n1 inv$b2 inode_sl1_29 
 AND ins_shl2_29_n2 b2 inode_sl1_25 
 OR inode_sl2_29 ins_shl2_29_n1 ins_shl2_29_n2 
-AND ins_shl2_30_n1 inv$b2 inode_sl1_30 
-AND ins_shl2_30_n2 b2 inode_sl1_26 
+CHAO ins_shl2_30_n1 inv$b2 inode_sl1_30 k638 
+CHAO ins_shl2_30_n2 b2 inode_sl1_26 k639 
 OR inode_sl2_30 ins_shl2_30_n1 ins_shl2_30_n2 
 AND ins_shl2_31_n1 inv$b2 inode_sl1_31 
 AND ins_shl2_31_n2 b2 inode_sl1_27 
@@ -647,47 +647,47 @@ OR inode_sl3_0 ins_shl3_0_n1 ins_shl3_0_n2
 AND ins_shl3_1_n1 inv$b3 inode_sl2_1 
 AND ins_shl3_1_n2 b3 LO 
 OR inode_sl3_1 ins_shl3_1_n1 ins_shl3_1_n2 
-AND ins_shl3_2_n1 inv$b3 inode_sl2_2 
+CHAO ins_shl3_2_n1 inv$b3 inode_sl2_2 k650 
 AND ins_shl3_2_n2 b3 LO 
-CHAO inode_sl3_2 ins_shl3_2_n1 ins_shl3_2_n2 k652 
-AND ins_shl3_3_n1 inv$b3 inode_sl2_3 
-AND ins_shl3_3_n2 b3 LO 
+OR inode_sl3_2 ins_shl3_2_n1 ins_shl3_2_n2 
+CHAO ins_shl3_3_n1 inv$b3 inode_sl2_3 k653 
+CHAO ins_shl3_3_n2 b3 LO k654 
 OR inode_sl3_3 ins_shl3_3_n1 ins_shl3_3_n2 
-CHAO ins_shl3_4_n1 inv$b3 inode_sl2_4 k656 
+AND ins_shl3_4_n1 inv$b3 inode_sl2_4 
 AND ins_shl3_4_n2 b3 LO 
-CHAO inode_sl3_4 ins_shl3_4_n1 ins_shl3_4_n2 k658 
+OR inode_sl3_4 ins_shl3_4_n1 ins_shl3_4_n2 
 AND ins_shl3_5_n1 inv$b3 inode_sl2_5 
 AND ins_shl3_5_n2 b3 LO 
 OR inode_sl3_5 ins_shl3_5_n1 ins_shl3_5_n2 
-AND ins_shl3_6_n1 inv$b3 inode_sl2_6 
+CHAO ins_shl3_6_n1 inv$b3 inode_sl2_6 k662 
 AND ins_shl3_6_n2 b3 LO 
-OR inode_sl3_6 ins_shl3_6_n1 ins_shl3_6_n2 
+CHAO inode_sl3_6 ins_shl3_6_n1 ins_shl3_6_n2 k664 
 AND ins_shl3_7_n1 inv$b3 inode_sl2_7 
 AND ins_shl3_7_n2 b3 LO 
 OR inode_sl3_7 ins_shl3_7_n1 ins_shl3_7_n2 
-AND ins_shl3_8_n1 inv$b3 inode_sl2_8 
+CHAO ins_shl3_8_n1 inv$b3 inode_sl2_8 k668 
 AND ins_shl3_8_n2 b3 inode_sl2_0 
-CHAO inode_sl3_8 ins_shl3_8_n1 ins_shl3_8_n2 k670 
+OR inode_sl3_8 ins_shl3_8_n1 ins_shl3_8_n2 
 AND ins_shl3_9_n1 inv$b3 inode_sl2_9 
 AND ins_shl3_9_n2 b3 inode_sl2_1 
-CHAO inode_sl3_9 ins_shl3_9_n1 ins_shl3_9_n2 k673 
-AND ins_shl3_10_n1 inv$b3 inode_sl2_10 
+OR inode_sl3_9 ins_shl3_9_n1 ins_shl3_9_n2 
+CHAO ins_shl3_10_n1 inv$b3 inode_sl2_10 k674 
 AND ins_shl3_10_n2 b3 inode_sl2_2 
-CHAO inode_sl3_10 ins_shl3_10_n1 ins_shl3_10_n2 k676 
+OR inode_sl3_10 ins_shl3_10_n1 ins_shl3_10_n2 
 AND ins_shl3_11_n1 inv$b3 inode_sl2_11 
-AND ins_shl3_11_n2 b3 inode_sl2_3 
-CHAO inode_sl3_11 ins_shl3_11_n1 ins_shl3_11_n2 k679 
+CHAO ins_shl3_11_n2 b3 inode_sl2_3 k678 
+OR inode_sl3_11 ins_shl3_11_n1 ins_shl3_11_n2 
 AND ins_shl3_12_n1 inv$b3 inode_sl2_12 
 AND ins_shl3_12_n2 b3 inode_sl2_4 
-OR inode_sl3_12 ins_shl3_12_n1 ins_shl3_12_n2 
-CHAO ins_shl3_13_n1 inv$b3 inode_sl2_13 k683 
+CHAO inode_sl3_12 ins_shl3_12_n1 ins_shl3_12_n2 k682 
+AND ins_shl3_13_n1 inv$b3 inode_sl2_13 
 CHAO ins_shl3_13_n2 b3 inode_sl2_5 k684 
-CHAO inode_sl3_13 ins_shl3_13_n1 ins_shl3_13_n2 k685 
+OR inode_sl3_13 ins_shl3_13_n1 ins_shl3_13_n2 
 AND ins_shl3_14_n1 inv$b3 inode_sl2_14 
-CHAO ins_shl3_14_n2 b3 inode_sl2_6 k687 
+AND ins_shl3_14_n2 b3 inode_sl2_6 
 OR inode_sl3_14 ins_shl3_14_n1 ins_shl3_14_n2 
-AND ins_shl3_15_n1 inv$b3 inode_sl2_15 
-CHAO ins_shl3_15_n2 b3 inode_sl2_7 k690 
+CHAO ins_shl3_15_n1 inv$b3 inode_sl2_15 k689 
+AND ins_shl3_15_n2 b3 inode_sl2_7 
 OR inode_sl3_15 ins_shl3_15_n1 ins_shl3_15_n2 
 AND ins_shl3_16_n1 inv$b3 inode_sl2_16 
 AND ins_shl3_16_n2 b3 inode_sl2_8 
@@ -698,30 +698,30 @@ OR inode_sl3_17 ins_shl3_17_n1 ins_shl3_17_n2
 AND ins_shl3_18_n1 inv$b3 inode_sl2_18 
 AND ins_shl3_18_n2 b3 inode_sl2_10 
 CHAO inode_sl3_18 ins_shl3_18_n1 ins_shl3_18_n2 k700 
-CHAO ins_shl3_19_n1 inv$b3 inode_sl2_19 k701 
-AND ins_shl3_19_n2 b3 inode_sl2_11 
+AND ins_shl3_19_n1 inv$b3 inode_sl2_19 
+CHAO ins_shl3_19_n2 b3 inode_sl2_11 k702 
 OR inode_sl3_19 ins_shl3_19_n1 ins_shl3_19_n2 
-AND ins_shl3_20_n1 inv$b3 inode_sl2_20 
-CHAO ins_shl3_20_n2 b3 inode_sl2_12 k705 
+CHAO ins_shl3_20_n1 inv$b3 inode_sl2_20 k704 
+AND ins_shl3_20_n2 b3 inode_sl2_12 
 OR inode_sl3_20 ins_shl3_20_n1 ins_shl3_20_n2 
-CHAO ins_shl3_21_n1 inv$b3 inode_sl2_21 k707 
+AND ins_shl3_21_n1 inv$b3 inode_sl2_21 
 AND ins_shl3_21_n2 b3 inode_sl2_13 
 CHAO inode_sl3_21 ins_shl3_21_n1 ins_shl3_21_n2 k709 
-CHAO ins_shl3_22_n1 inv$b3 inode_sl2_22 k710 
+AND ins_shl3_22_n1 inv$b3 inode_sl2_22 
 AND ins_shl3_22_n2 b3 inode_sl2_14 
 OR inode_sl3_22 ins_shl3_22_n1 ins_shl3_22_n2 
-AND ins_shl3_23_n1 inv$b3 inode_sl2_23 
+CHAO ins_shl3_23_n1 inv$b3 inode_sl2_23 k713 
 AND ins_shl3_23_n2 b3 inode_sl2_15 
 OR inode_sl3_23 ins_shl3_23_n1 ins_shl3_23_n2 
-CHAO ins_shl3_24_n1 inv$b3 inode_sl2_24 k716 
-AND ins_shl3_24_n2 b3 inode_sl2_16 
-CHAO inode_sl3_24 ins_shl3_24_n1 ins_shl3_24_n2 k718 
+AND ins_shl3_24_n1 inv$b3 inode_sl2_24 
+CHAO ins_shl3_24_n2 b3 inode_sl2_16 k717 
+OR inode_sl3_24 ins_shl3_24_n1 ins_shl3_24_n2 
 AND ins_shl3_25_n1 inv$b3 inode_sl2_25 
-AND ins_shl3_25_n2 b3 inode_sl2_17 
-CHAO inode_sl3_25 ins_shl3_25_n1 ins_shl3_25_n2 k721 
-CHAO ins_shl3_26_n1 inv$b3 inode_sl2_26 k722 
+CHAO ins_shl3_25_n2 b3 inode_sl2_17 k720 
+OR inode_sl3_25 ins_shl3_25_n1 ins_shl3_25_n2 
+AND ins_shl3_26_n1 inv$b3 inode_sl2_26 
 AND ins_shl3_26_n2 b3 inode_sl2_18 
-OR inode_sl3_26 ins_shl3_26_n1 ins_shl3_26_n2 
+CHAO inode_sl3_26 ins_shl3_26_n1 ins_shl3_26_n2 k724 
 AND ins_shl3_27_n1 inv$b3 inode_sl2_27 
 AND ins_shl3_27_n2 b3 inode_sl2_19 
 OR inode_sl3_27 ins_shl3_27_n1 ins_shl3_27_n2 
@@ -731,8 +731,8 @@ OR inode_sl3_28 ins_shl3_28_n1 ins_shl3_28_n2
 AND ins_shl3_29_n1 inv$b3 inode_sl2_29 
 AND ins_shl3_29_n2 b3 inode_sl2_21 
 OR inode_sl3_29 ins_shl3_29_n1 ins_shl3_29_n2 
-AND ins_shl3_30_n1 inv$b3 inode_sl2_30 
-CHAO ins_shl3_30_n2 b3 inode_sl2_22 k735 
+CHAO ins_shl3_30_n1 inv$b3 inode_sl2_30 k734 
+AND ins_shl3_30_n2 b3 inode_sl2_22 
 OR inode_sl3_30 ins_shl3_30_n1 ins_shl3_30_n2 
 AND ins_shl3_31_n1 inv$b3 inode_sl2_31 
 AND ins_shl3_31_n2 b3 inode_sl2_23 
@@ -740,56 +740,56 @@ OR inode_sl3_31 ins_shl3_31_n1 ins_shl3_31_n2
 AND ins_shl4_0_n1 inv$b4 inode_sl3_0 
 AND ins_shl4_0_n2 b4 LO 
 OR y0_shl ins_shl4_0_n1 ins_shl4_0_n2 
-CHAO ins_shl4_1_n1 inv$b4 inode_sl3_1 k743 
-CHAO ins_shl4_1_n2 b4 LO k744 
+AND ins_shl4_1_n1 inv$b4 inode_sl3_1 
+AND ins_shl4_1_n2 b4 LO 
 OR y1_shl ins_shl4_1_n1 ins_shl4_1_n2 
-CHAO ins_shl4_2_n1 inv$b4 inode_sl3_2 k746 
-CHAO ins_shl4_2_n2 b4 LO k747 
+AND ins_shl4_2_n1 inv$b4 inode_sl3_2 
+AND ins_shl4_2_n2 b4 LO 
 CHAO y2_shl ins_shl4_2_n1 ins_shl4_2_n2 k748 
 CHAO ins_shl4_3_n1 inv$b4 inode_sl3_3 k749 
-CHAO ins_shl4_3_n2 b4 LO k750 
+AND ins_shl4_3_n2 b4 LO 
 OR y3_shl ins_shl4_3_n1 ins_shl4_3_n2 
-CHAO ins_shl4_4_n1 inv$b4 inode_sl3_4 k752 
+AND ins_shl4_4_n1 inv$b4 inode_sl3_4 
 AND ins_shl4_4_n2 b4 LO 
 OR y4_shl ins_shl4_4_n1 ins_shl4_4_n2 
-AND ins_shl4_5_n1 inv$b4 inode_sl3_5 
+CHAO ins_shl4_5_n1 inv$b4 inode_sl3_5 k755 
 CHAO ins_shl4_5_n2 b4 LO k756 
 OR y5_shl ins_shl4_5_n1 ins_shl4_5_n2 
-CHAO ins_shl4_6_n1 inv$b4 inode_sl3_6 k758 
-CHAO ins_shl4_6_n2 b4 LO k759 
-OR y6_shl ins_shl4_6_n1 ins_shl4_6_n2 
-AND ins_shl4_7_n1 inv$b4 inode_sl3_7 
-AND ins_shl4_7_n2 b4 LO 
-OR y7_shl ins_shl4_7_n1 ins_shl4_7_n2 
-CHAO ins_shl4_8_n1 inv$b4 inode_sl3_8 k764 
+AND ins_shl4_6_n1 inv$b4 inode_sl3_6 
+AND ins_shl4_6_n2 b4 LO 
+CHAO y6_shl ins_shl4_6_n1 ins_shl4_6_n2 k760 
+CHAO ins_shl4_7_n1 inv$b4 inode_sl3_7 k761 
+CHAO ins_shl4_7_n2 b4 LO k762 
+CHAO y7_shl ins_shl4_7_n1 ins_shl4_7_n2 k763 
+AND ins_shl4_8_n1 inv$b4 inode_sl3_8 
 AND ins_shl4_8_n2 b4 LO 
-CHAO y8_shl ins_shl4_8_n1 ins_shl4_8_n2 k766 
+OR y8_shl ins_shl4_8_n1 ins_shl4_8_n2 
 AND ins_shl4_9_n1 inv$b4 inode_sl3_9 
 AND ins_shl4_9_n2 b4 LO 
 OR y9_shl ins_shl4_9_n1 ins_shl4_9_n2 
 AND ins_shl4_10_n1 inv$b4 inode_sl3_10 
-AND ins_shl4_10_n2 b4 LO 
+CHAO ins_shl4_10_n2 b4 LO k771 
 OR y10_shl ins_shl4_10_n1 ins_shl4_10_n2 
 AND ins_shl4_11_n1 inv$b4 inode_sl3_11 
-AND ins_shl4_11_n2 b4 LO 
+CHAO ins_shl4_11_n2 b4 LO k774 
 OR y11_shl ins_shl4_11_n1 ins_shl4_11_n2 
-AND ins_shl4_12_n1 inv$b4 inode_sl3_12 
-AND ins_shl4_12_n2 b4 LO 
+CHAO ins_shl4_12_n1 inv$b4 inode_sl3_12 k776 
+CHAO ins_shl4_12_n2 b4 LO k777 
 OR y12_shl ins_shl4_12_n1 ins_shl4_12_n2 
-AND ins_shl4_13_n1 inv$b4 inode_sl3_13 
+CHAO ins_shl4_13_n1 inv$b4 inode_sl3_13 k779 
 AND ins_shl4_13_n2 b4 LO 
-OR y13_shl ins_shl4_13_n1 ins_shl4_13_n2 
+CHAO y13_shl ins_shl4_13_n1 ins_shl4_13_n2 k781 
 AND ins_shl4_14_n1 inv$b4 inode_sl3_14 
-CHAO ins_shl4_14_n2 b4 LO k783 
-OR y14_shl ins_shl4_14_n1 ins_shl4_14_n2 
+AND ins_shl4_14_n2 b4 LO 
+CHAO y14_shl ins_shl4_14_n1 ins_shl4_14_n2 k784 
 AND ins_shl4_15_n1 inv$b4 inode_sl3_15 
 AND ins_shl4_15_n2 b4 LO 
-OR y15_shl ins_shl4_15_n1 ins_shl4_15_n2 
+CHAO y15_shl ins_shl4_15_n1 ins_shl4_15_n2 k787 
 AND ins_shl4_16_n1 inv$b4 inode_sl3_16 
 AND ins_shl4_16_n2 b4 inode_sl3_0 
 OR y16_shl ins_shl4_16_n1 ins_shl4_16_n2 
 AND ins_shl4_17_n1 inv$b4 inode_sl3_17 
-CHAO ins_shl4_17_n2 b4 inode_sl3_1 k792 
+AND ins_shl4_17_n2 b4 inode_sl3_1 
 OR y17_shl ins_shl4_17_n1 ins_shl4_17_n2 
 AND ins_shl4_18_n1 inv$b4 inode_sl3_18 
 AND ins_shl4_18_n2 b4 inode_sl3_2 
@@ -800,18 +800,18 @@ OR y19_shl ins_shl4_19_n1 ins_shl4_19_n2
 AND ins_shl4_20_n1 inv$b4 inode_sl3_20 
 AND ins_shl4_20_n2 b4 inode_sl3_4 
 OR y20_shl ins_shl4_20_n1 ins_shl4_20_n2 
-CHAO ins_shl4_21_n1 inv$b4 inode_sl3_21 k803 
+AND ins_shl4_21_n1 inv$b4 inode_sl3_21 
 AND ins_shl4_21_n2 b4 inode_sl3_5 
-CHAO y21_shl ins_shl4_21_n1 ins_shl4_21_n2 k805 
+OR y21_shl ins_shl4_21_n1 ins_shl4_21_n2 
 AND ins_shl4_22_n1 inv$b4 inode_sl3_22 
-AND ins_shl4_22_n2 b4 inode_sl3_6 
+CHAO ins_shl4_22_n2 b4 inode_sl3_6 k807 
 OR y22_shl ins_shl4_22_n1 ins_shl4_22_n2 
-CHAO ins_shl4_23_n1 inv$b4 inode_sl3_23 k809 
+AND ins_shl4_23_n1 inv$b4 inode_sl3_23 
 AND ins_shl4_23_n2 b4 inode_sl3_7 
 OR y23_shl ins_shl4_23_n1 ins_shl4_23_n2 
 AND ins_shl4_24_n1 inv$b4 inode_sl3_24 
 CHAO ins_shl4_24_n2 b4 inode_sl3_8 k813 
-CHAO y24_shl ins_shl4_24_n1 ins_shl4_24_n2 k814 
+OR y24_shl ins_shl4_24_n1 ins_shl4_24_n2 
 AND ins_shl4_25_n1 inv$b4 inode_sl3_25 
 CHAO ins_shl4_25_n2 b4 inode_sl3_9 k816 
 OR y25_shl ins_shl4_25_n1 ins_shl4_25_n2 
@@ -819,22 +819,22 @@ AND ins_shl4_26_n1 inv$b4 inode_sl3_26
 AND ins_shl4_26_n2 b4 inode_sl3_10 
 OR y26_shl ins_shl4_26_n1 ins_shl4_26_n2 
 AND ins_shl4_27_n1 inv$b4 inode_sl3_27 
-CHAO ins_shl4_27_n2 b4 inode_sl3_11 k822 
-OR y27_shl ins_shl4_27_n1 ins_shl4_27_n2 
-CHAO ins_shl4_28_n1 inv$b4 inode_sl3_28 k824 
+AND ins_shl4_27_n2 b4 inode_sl3_11 
+CHAO y27_shl ins_shl4_27_n1 ins_shl4_27_n2 k823 
+AND ins_shl4_28_n1 inv$b4 inode_sl3_28 
 AND ins_shl4_28_n2 b4 inode_sl3_12 
 OR y28_shl ins_shl4_28_n1 ins_shl4_28_n2 
-CHAO ins_shl4_29_n1 inv$b4 inode_sl3_29 k827 
-CHAO ins_shl4_29_n2 b4 inode_sl3_13 k828 
-OR y29_shl ins_shl4_29_n1 ins_shl4_29_n2 
-AND ins_shl4_30_n1 inv$b4 inode_sl3_30 
-AND ins_shl4_30_n2 b4 inode_sl3_14 
+AND ins_shl4_29_n1 inv$b4 inode_sl3_29 
+AND ins_shl4_29_n2 b4 inode_sl3_13 
+CHAO y29_shl ins_shl4_29_n1 ins_shl4_29_n2 k829 
+CHAO ins_shl4_30_n1 inv$b4 inode_sl3_30 k830 
+CHAO ins_shl4_30_n2 b4 inode_sl3_14 k831 
 OR y30_shl ins_shl4_30_n1 ins_shl4_30_n2 
 AND ins_shl4_31_n1 inv$b4 inode_sl3_31 
-AND ins_shl4_31_n2 b4 inode_sl3_15 
+CHAO ins_shl4_31_n2 b4 inode_sl3_15 k834 
 OR y31_shl ins_shl4_31_n1 ins_shl4_31_n2 
 XOR inv$ctrl_log_arith ctrl_log_arith HI 
-CHAO ins_srlcn1 inv$ctrl_log_arith LO k837 
+AND ins_srlcn1 inv$ctrl_log_arith LO 
 AND ins_srlcn2 ctrl_log_arith a31 
 OR sr_ctrl ins_srlcn1 ins_srlcn2 
 AND ins_srl0_31_n1 inv$b0 a31 
@@ -842,49 +842,49 @@ AND ins_srl0_31_n2 b0 sr_ctrl
 OR inode_sr0_31 ins_srl0_31_n1 ins_srl0_31_n2 
 AND ins_srl0_30_n1 inv$b0 a30 
 AND ins_srl0_30_n2 b0 a31 
-OR inode_sr0_30 ins_srl0_30_n1 ins_srl0_30_n2 
-CHAO ins_srl0_29_n1 inv$b0 a29 k846 
+CHAO inode_sr0_30 ins_srl0_30_n1 ins_srl0_30_n2 k845 
+AND ins_srl0_29_n1 inv$b0 a29 
 AND ins_srl0_29_n2 b0 a30 
 OR inode_sr0_29 ins_srl0_29_n1 ins_srl0_29_n2 
 CHAO ins_srl0_28_n1 inv$b0 a28 k849 
-AND ins_srl0_28_n2 b0 a29 
+CHAO ins_srl0_28_n2 b0 a29 k850 
 OR inode_sr0_28 ins_srl0_28_n1 ins_srl0_28_n2 
-CHAO ins_srl0_27_n1 inv$b0 a27 k852 
-CHAO ins_srl0_27_n2 b0 a28 k853 
+AND ins_srl0_27_n1 inv$b0 a27 
+AND ins_srl0_27_n2 b0 a28 
 OR inode_sr0_27 ins_srl0_27_n1 ins_srl0_27_n2 
 AND ins_srl0_26_n1 inv$b0 a26 
-CHAO ins_srl0_26_n2 b0 a27 k856 
+AND ins_srl0_26_n2 b0 a27 
 OR inode_sr0_26 ins_srl0_26_n1 ins_srl0_26_n2 
-CHAO ins_srl0_25_n1 inv$b0 a25 k858 
+AND ins_srl0_25_n1 inv$b0 a25 
 AND ins_srl0_25_n2 b0 a26 
 CHAO inode_sr0_25 ins_srl0_25_n1 ins_srl0_25_n2 k860 
 AND ins_srl0_24_n1 inv$b0 a24 
 AND ins_srl0_24_n2 b0 a25 
 OR inode_sr0_24 ins_srl0_24_n1 ins_srl0_24_n2 
-CHAO ins_srl0_23_n1 inv$b0 a23 k864 
-CHAO ins_srl0_23_n2 b0 a24 k865 
-OR inode_sr0_23 ins_srl0_23_n1 ins_srl0_23_n2 
-CHAO ins_srl0_22_n1 inv$b0 a22 k867 
-AND ins_srl0_22_n2 b0 a23 
-OR inode_sr0_22 ins_srl0_22_n1 ins_srl0_22_n2 
+AND ins_srl0_23_n1 inv$b0 a23 
+AND ins_srl0_23_n2 b0 a24 
+CHAO inode_sr0_23 ins_srl0_23_n1 ins_srl0_23_n2 k866 
+AND ins_srl0_22_n1 inv$b0 a22 
+CHAO ins_srl0_22_n2 b0 a23 k868 
+CHAO inode_sr0_22 ins_srl0_22_n1 ins_srl0_22_n2 k869 
 AND ins_srl0_21_n1 inv$b0 a21 
 AND ins_srl0_21_n2 b0 a22 
-CHAO inode_sr0_21 ins_srl0_21_n1 ins_srl0_21_n2 k872 
+OR inode_sr0_21 ins_srl0_21_n1 ins_srl0_21_n2 
 AND ins_srl0_20_n1 inv$b0 a20 
 AND ins_srl0_20_n2 b0 a21 
-CHAO inode_sr0_20 ins_srl0_20_n1 ins_srl0_20_n2 k875 
-CHAO ins_srl0_19_n1 inv$b0 a19 k876 
-AND ins_srl0_19_n2 b0 a20 
+OR inode_sr0_20 ins_srl0_20_n1 ins_srl0_20_n2 
+AND ins_srl0_19_n1 inv$b0 a19 
+CHAO ins_srl0_19_n2 b0 a20 k877 
 OR inode_sr0_19 ins_srl0_19_n1 ins_srl0_19_n2 
 CHAO ins_srl0_18_n1 inv$b0 a18 k879 
-AND ins_srl0_18_n2 b0 a19 
-OR inode_sr0_18 ins_srl0_18_n1 ins_srl0_18_n2 
+CHAO ins_srl0_18_n2 b0 a19 k880 
+CHAO inode_sr0_18 ins_srl0_18_n1 ins_srl0_18_n2 k881 
 AND ins_srl0_17_n1 inv$b0 a17 
 AND ins_srl0_17_n2 b0 a18 
 OR inode_sr0_17 ins_srl0_17_n1 ins_srl0_17_n2 
 AND ins_srl0_16_n1 inv$b0 a16 
 AND ins_srl0_16_n2 b0 a17 
-CHAO inode_sr0_16 ins_srl0_16_n1 ins_srl0_16_n2 k887 
+OR inode_sr0_16 ins_srl0_16_n1 ins_srl0_16_n2 
 CHAO ins_srl0_15_n1 inv$b0 a15 k888 
 AND ins_srl0_15_n2 b0 a16 
 CHAO inode_sr0_15 ins_srl0_15_n1 ins_srl0_15_n2 k890 
@@ -892,58 +892,58 @@ AND ins_srl0_14_n1 inv$b0 a14
 AND ins_srl0_14_n2 b0 a15 
 OR inode_sr0_14 ins_srl0_14_n1 ins_srl0_14_n2 
 AND ins_srl0_13_n1 inv$b0 a13 
-AND ins_srl0_13_n2 b0 a14 
+CHAO ins_srl0_13_n2 b0 a14 k895 
 CHAO inode_sr0_13 ins_srl0_13_n1 ins_srl0_13_n2 k896 
 AND ins_srl0_12_n1 inv$b0 a12 
 AND ins_srl0_12_n2 b0 a13 
-CHAO inode_sr0_12 ins_srl0_12_n1 ins_srl0_12_n2 k899 
+OR inode_sr0_12 ins_srl0_12_n1 ins_srl0_12_n2 
 AND ins_srl0_11_n1 inv$b0 a11 
 CHAO ins_srl0_11_n2 b0 a12 k901 
 OR inode_sr0_11 ins_srl0_11_n1 ins_srl0_11_n2 
 AND ins_srl0_10_n1 inv$b0 a10 
 AND ins_srl0_10_n2 b0 a11 
-OR inode_sr0_10 ins_srl0_10_n1 ins_srl0_10_n2 
+CHAO inode_sr0_10 ins_srl0_10_n1 ins_srl0_10_n2 k905 
 AND ins_srl0_9_n1 inv$b0 a9 
 AND ins_srl0_9_n2 b0 a10 
-CHAO inode_sr0_9 ins_srl0_9_n1 ins_srl0_9_n2 k908 
+OR inode_sr0_9 ins_srl0_9_n1 ins_srl0_9_n2 
 AND ins_srl0_8_n1 inv$b0 a8 
-AND ins_srl0_8_n2 b0 a9 
+CHAO ins_srl0_8_n2 b0 a9 k910 
 CHAO inode_sr0_8 ins_srl0_8_n1 ins_srl0_8_n2 k911 
-CHAO ins_srl0_7_n1 inv$b0 a7 k912 
-AND ins_srl0_7_n2 b0 a8 
-OR inode_sr0_7 ins_srl0_7_n1 ins_srl0_7_n2 
+AND ins_srl0_7_n1 inv$b0 a7 
+CHAO ins_srl0_7_n2 b0 a8 k913 
+CHAO inode_sr0_7 ins_srl0_7_n1 ins_srl0_7_n2 k914 
 AND ins_srl0_6_n1 inv$b0 a6 
 AND ins_srl0_6_n2 b0 a7 
-OR inode_sr0_6 ins_srl0_6_n1 ins_srl0_6_n2 
-CHAO ins_srl0_5_n1 inv$b0 a5 k918 
-AND ins_srl0_5_n2 b0 a6 
+CHAO inode_sr0_6 ins_srl0_6_n1 ins_srl0_6_n2 k917 
+AND ins_srl0_5_n1 inv$b0 a5 
+CHAO ins_srl0_5_n2 b0 a6 k919 
 OR inode_sr0_5 ins_srl0_5_n1 ins_srl0_5_n2 
-AND ins_srl0_4_n1 inv$b0 a4 
+CHAO ins_srl0_4_n1 inv$b0 a4 k921 
 AND ins_srl0_4_n2 b0 a5 
-CHAO inode_sr0_4 ins_srl0_4_n1 ins_srl0_4_n2 k923 
-AND ins_srl0_3_n1 inv$b0 a3 
-AND ins_srl0_3_n2 b0 a4 
-OR inode_sr0_3 ins_srl0_3_n1 ins_srl0_3_n2 
-CHAO ins_srl0_2_n1 inv$b0 a2 k927 
+OR inode_sr0_4 ins_srl0_4_n1 ins_srl0_4_n2 
+CHAO ins_srl0_3_n1 inv$b0 a3 k924 
+CHAO ins_srl0_3_n2 b0 a4 k925 
+CHAO inode_sr0_3 ins_srl0_3_n1 ins_srl0_3_n2 k926 
+AND ins_srl0_2_n1 inv$b0 a2 
 AND ins_srl0_2_n2 b0 a3 
-CHAO inode_sr0_2 ins_srl0_2_n1 ins_srl0_2_n2 k929 
-CHAO ins_srl0_1_n1 inv$b0 a1 k930 
-CHAO ins_srl0_1_n2 b0 a2 k931 
+OR inode_sr0_2 ins_srl0_2_n1 ins_srl0_2_n2 
+AND ins_srl0_1_n1 inv$b0 a1 
+AND ins_srl0_1_n2 b0 a2 
 OR inode_sr0_1 ins_srl0_1_n1 ins_srl0_1_n2 
-AND ins_srl0_0_n1 inv$b0 a0 
+CHAO ins_srl0_0_n1 inv$b0 a0 k933 
 AND ins_srl0_0_n2 b0 a1 
 OR inode_sr0_0 ins_srl0_0_n1 ins_srl0_0_n2 
 AND ins_shr1_31_n1 inv$b1 inode_sr0_31 
-CHAO ins_shr1_31_n2 b1 sr_ctrl k937 
+AND ins_shr1_31_n2 b1 sr_ctrl 
 OR inode_sr1_31 ins_shr1_31_n1 ins_shr1_31_n2 
-AND ins_shr1_30_n1 inv$b1 inode_sr0_30 
+CHAO ins_shr1_30_n1 inv$b1 inode_sr0_30 k939 
 AND ins_shr1_30_n2 b1 sr_ctrl 
-OR inode_sr1_30 ins_shr1_30_n1 ins_shr1_30_n2 
-AND ins_shr1_29_n1 inv$b1 inode_sr0_29 
+CHAO inode_sr1_30 ins_shr1_30_n1 ins_shr1_30_n2 k941 
+CHAO ins_shr1_29_n1 inv$b1 inode_sr0_29 k942 
 CHAO ins_shr1_29_n2 b1 inode_sr0_31 k943 
-OR inode_sr1_29 ins_shr1_29_n1 ins_shr1_29_n2 
-CHAO ins_shr1_28_n1 inv$b1 inode_sr0_28 k945 
-CHAO ins_shr1_28_n2 b1 inode_sr0_30 k946 
+CHAO inode_sr1_29 ins_shr1_29_n1 ins_shr1_29_n2 k944 
+AND ins_shr1_28_n1 inv$b1 inode_sr0_28 
+AND ins_shr1_28_n2 b1 inode_sr0_30 
 OR inode_sr1_28 ins_shr1_28_n1 ins_shr1_28_n2 
 AND ins_shr1_27_n1 inv$b1 inode_sr0_27 
 AND ins_shr1_27_n2 b1 inode_sr0_29 
@@ -951,27 +951,27 @@ OR inode_sr1_27 ins_shr1_27_n1 ins_shr1_27_n2
 AND ins_shr1_26_n1 inv$b1 inode_sr0_26 
 AND ins_shr1_26_n2 b1 inode_sr0_28 
 OR inode_sr1_26 ins_shr1_26_n1 ins_shr1_26_n2 
-AND ins_shr1_25_n1 inv$b1 inode_sr0_25 
-AND ins_shr1_25_n2 b1 inode_sr0_27 
+CHAO ins_shr1_25_n1 inv$b1 inode_sr0_25 k954 
+CHAO ins_shr1_25_n2 b1 inode_sr0_27 k955 
 OR inode_sr1_25 ins_shr1_25_n1 ins_shr1_25_n2 
 AND ins_shr1_24_n1 inv$b1 inode_sr0_24 
-CHAO ins_shr1_24_n2 b1 inode_sr0_26 k958 
+AND ins_shr1_24_n2 b1 inode_sr0_26 
 OR inode_sr1_24 ins_shr1_24_n1 ins_shr1_24_n2 
-CHAO ins_shr1_23_n1 inv$b1 inode_sr0_23 k960 
+AND ins_shr1_23_n1 inv$b1 inode_sr0_23 
 AND ins_shr1_23_n2 b1 inode_sr0_25 
 OR inode_sr1_23 ins_shr1_23_n1 ins_shr1_23_n2 
-CHAO ins_shr1_22_n1 inv$b1 inode_sr0_22 k963 
+AND ins_shr1_22_n1 inv$b1 inode_sr0_22 
 AND ins_shr1_22_n2 b1 inode_sr0_24 
-CHAO inode_sr1_22 ins_shr1_22_n1 ins_shr1_22_n2 k965 
+OR inode_sr1_22 ins_shr1_22_n1 ins_shr1_22_n2 
 AND ins_shr1_21_n1 inv$b1 inode_sr0_21 
 AND ins_shr1_21_n2 b1 inode_sr0_23 
 CHAO inode_sr1_21 ins_shr1_21_n1 ins_shr1_21_n2 k968 
 AND ins_shr1_20_n1 inv$b1 inode_sr0_20 
 AND ins_shr1_20_n2 b1 inode_sr0_22 
-CHAO inode_sr1_20 ins_shr1_20_n1 ins_shr1_20_n2 k971 
+OR inode_sr1_20 ins_shr1_20_n1 ins_shr1_20_n2 
 CHAO ins_shr1_19_n1 inv$b1 inode_sr0_19 k972 
-AND ins_shr1_19_n2 b1 inode_sr0_21 
-CHAO inode_sr1_19 ins_shr1_19_n1 ins_shr1_19_n2 k974 
+CHAO ins_shr1_19_n2 b1 inode_sr0_21 k973 
+OR inode_sr1_19 ins_shr1_19_n1 ins_shr1_19_n2 
 AND ins_shr1_18_n1 inv$b1 inode_sr0_18 
 AND ins_shr1_18_n2 b1 inode_sr0_20 
 CHAO inode_sr1_18 ins_shr1_18_n1 ins_shr1_18_n2 k977 
@@ -983,17 +983,17 @@ AND ins_shr1_16_n2 b1 inode_sr0_18
 OR inode_sr1_16 ins_shr1_16_n1 ins_shr1_16_n2 
 AND ins_shr1_15_n1 inv$b1 inode_sr0_15 
 AND ins_shr1_15_n2 b1 inode_sr0_17 
-OR inode_sr1_15 ins_shr1_15_n1 ins_shr1_15_n2 
-CHAO ins_shr1_14_n1 inv$b1 inode_sr0_14 k987 
-AND ins_shr1_14_n2 b1 inode_sr0_16 
+CHAO inode_sr1_15 ins_shr1_15_n1 ins_shr1_15_n2 k986 
+AND ins_shr1_14_n1 inv$b1 inode_sr0_14 
+CHAO ins_shr1_14_n2 b1 inode_sr0_16 k988 
 OR inode_sr1_14 ins_shr1_14_n1 ins_shr1_14_n2 
 AND ins_shr1_13_n1 inv$b1 inode_sr0_13 
-CHAO ins_shr1_13_n2 b1 inode_sr0_15 k991 
-OR inode_sr1_13 ins_shr1_13_n1 ins_shr1_13_n2 
-CHAO ins_shr1_12_n1 inv$b1 inode_sr0_12 k993 
-AND ins_shr1_12_n2 b1 inode_sr0_14 
-CHAO inode_sr1_12 ins_shr1_12_n1 ins_shr1_12_n2 k995 
-CHAO ins_shr1_11_n1 inv$b1 inode_sr0_11 k996 
+AND ins_shr1_13_n2 b1 inode_sr0_15 
+CHAO inode_sr1_13 ins_shr1_13_n1 ins_shr1_13_n2 k992 
+AND ins_shr1_12_n1 inv$b1 inode_sr0_12 
+CHAO ins_shr1_12_n2 b1 inode_sr0_14 k994 
+OR inode_sr1_12 ins_shr1_12_n1 ins_shr1_12_n2 
+AND ins_shr1_11_n1 inv$b1 inode_sr0_11 
 AND ins_shr1_11_n2 b1 inode_sr0_13 
 OR inode_sr1_11 ins_shr1_11_n1 ins_shr1_11_n2 
 AND ins_shr1_10_n1 inv$b1 inode_sr0_10 
@@ -1004,281 +1004,281 @@ AND ins_shr1_9_n2 b1 inode_sr0_11
 OR inode_sr1_9 ins_shr1_9_n1 ins_shr1_9_n2 
 AND ins_shr1_8_n1 inv$b1 inode_sr0_8 
 CHAO ins_shr1_8_n2 b1 inode_sr0_10 k1006 
-OR inode_sr1_8 ins_shr1_8_n1 ins_shr1_8_n2 
+CHAO inode_sr1_8 ins_shr1_8_n1 ins_shr1_8_n2 k1007 
 CHAO ins_shr1_7_n1 inv$b1 inode_sr0_7 k1008 
 AND ins_shr1_7_n2 b1 inode_sr0_9 
 OR inode_sr1_7 ins_shr1_7_n1 ins_shr1_7_n2 
-CHAO ins_shr1_6_n1 inv$b1 inode_sr0_6 k1011 
+AND ins_shr1_6_n1 inv$b1 inode_sr0_6 
 AND ins_shr1_6_n2 b1 inode_sr0_8 
 OR inode_sr1_6 ins_shr1_6_n1 ins_shr1_6_n2 
 AND ins_shr1_5_n1 inv$b1 inode_sr0_5 
 AND ins_shr1_5_n2 b1 inode_sr0_7 
 OR inode_sr1_5 ins_shr1_5_n1 ins_shr1_5_n2 
 AND ins_shr1_4_n1 inv$b1 inode_sr0_4 
-AND ins_shr1_4_n2 b1 inode_sr0_6 
+CHAO ins_shr1_4_n2 b1 inode_sr0_6 k1018 
 OR inode_sr1_4 ins_shr1_4_n1 ins_shr1_4_n2 
 AND ins_shr1_3_n1 inv$b1 inode_sr0_3 
-CHAO ins_shr1_3_n2 b1 inode_sr0_5 k1021 
-CHAO inode_sr1_3 ins_shr1_3_n1 ins_shr1_3_n2 k1022 
+AND ins_shr1_3_n2 b1 inode_sr0_5 
+OR inode_sr1_3 ins_shr1_3_n1 ins_shr1_3_n2 
 AND ins_shr1_2_n1 inv$b1 inode_sr0_2 
 AND ins_shr1_2_n2 b1 inode_sr0_4 
 CHAO inode_sr1_2 ins_shr1_2_n1 ins_shr1_2_n2 k1025 
 AND ins_shr1_1_n1 inv$b1 inode_sr0_1 
 AND ins_shr1_1_n2 b1 inode_sr0_3 
-CHAO inode_sr1_1 ins_shr1_1_n1 ins_shr1_1_n2 k1028 
-CHAO ins_shr1_0_n1 inv$b1 inode_sr0_0 k1029 
-CHAO ins_shr1_0_n2 b1 inode_sr0_2 k1030 
+OR inode_sr1_1 ins_shr1_1_n1 ins_shr1_1_n2 
+AND ins_shr1_0_n1 inv$b1 inode_sr0_0 
+AND ins_shr1_0_n2 b1 inode_sr0_2 
 OR inode_sr1_0 ins_shr1_0_n1 ins_shr1_0_n2 
 AND ins_shr2_31_n1 inv$b2 inode_sr1_31 
 AND ins_shr2_31_n2 b2 sr_ctrl 
-OR inode_sr2_31 ins_shr2_31_n1 ins_shr2_31_n2 
+CHAO inode_sr2_31 ins_shr2_31_n1 ins_shr2_31_n2 k1034 
 AND ins_shr2_30_n1 inv$b2 inode_sr1_30 
 AND ins_shr2_30_n2 b2 sr_ctrl 
 CHAO inode_sr2_30 ins_shr2_30_n1 ins_shr2_30_n2 k1037 
-CHAO ins_shr2_29_n1 inv$b2 inode_sr1_29 k1038 
-AND ins_shr2_29_n2 b2 sr_ctrl 
-CHAO inode_sr2_29 ins_shr2_29_n1 ins_shr2_29_n2 k1040 
-AND ins_shr2_28_n1 inv$b2 inode_sr1_28 
+AND ins_shr2_29_n1 inv$b2 inode_sr1_29 
+CHAO ins_shr2_29_n2 b2 sr_ctrl k1039 
+OR inode_sr2_29 ins_shr2_29_n1 ins_shr2_29_n2 
+CHAO ins_shr2_28_n1 inv$b2 inode_sr1_28 k1041 
 AND ins_shr2_28_n2 b2 sr_ctrl 
-CHAO inode_sr2_28 ins_shr2_28_n1 ins_shr2_28_n2 k1043 
+OR inode_sr2_28 ins_shr2_28_n1 ins_shr2_28_n2 
 AND ins_shr2_27_n1 inv$b2 inode_sr1_27 
 AND ins_shr2_27_n2 b2 inode_sr1_31 
 OR inode_sr2_27 ins_shr2_27_n1 ins_shr2_27_n2 
-CHAO ins_shr2_26_n1 inv$b2 inode_sr1_26 k1047 
-CHAO ins_shr2_26_n2 b2 inode_sr1_30 k1048 
-CHAO inode_sr2_26 ins_shr2_26_n1 ins_shr2_26_n2 k1049 
+AND ins_shr2_26_n1 inv$b2 inode_sr1_26 
+AND ins_shr2_26_n2 b2 inode_sr1_30 
+OR inode_sr2_26 ins_shr2_26_n1 ins_shr2_26_n2 
 AND ins_shr2_25_n1 inv$b2 inode_sr1_25 
-AND ins_shr2_25_n2 b2 inode_sr1_29 
+CHAO ins_shr2_25_n2 b2 inode_sr1_29 k1051 
 OR inode_sr2_25 ins_shr2_25_n1 ins_shr2_25_n2 
-AND ins_shr2_24_n1 inv$b2 inode_sr1_24 
+CHAO ins_shr2_24_n1 inv$b2 inode_sr1_24 k1053 
 AND ins_shr2_24_n2 b2 inode_sr1_28 
 OR inode_sr2_24 ins_shr2_24_n1 ins_shr2_24_n2 
 AND ins_shr2_23_n1 inv$b2 inode_sr1_23 
 CHAO ins_shr2_23_n2 b2 inode_sr1_27 k1057 
-OR inode_sr2_23 ins_shr2_23_n1 ins_shr2_23_n2 
+CHAO inode_sr2_23 ins_shr2_23_n1 ins_shr2_23_n2 k1058 
 AND ins_shr2_22_n1 inv$b2 inode_sr1_22 
 AND ins_shr2_22_n2 b2 inode_sr1_26 
 CHAO inode_sr2_22 ins_shr2_22_n1 ins_shr2_22_n2 k1061 
 AND ins_shr2_21_n1 inv$b2 inode_sr1_21 
-AND ins_shr2_21_n2 b2 inode_sr1_25 
-OR inode_sr2_21 ins_shr2_21_n1 ins_shr2_21_n2 
-CHAO ins_shr2_20_n1 inv$b2 inode_sr1_20 k1065 
-CHAO ins_shr2_20_n2 b2 inode_sr1_24 k1066 
-OR inode_sr2_20 ins_shr2_20_n1 ins_shr2_20_n2 
-CHAO ins_shr2_19_n1 inv$b2 inode_sr1_19 k1068 
-AND ins_shr2_19_n2 b2 inode_sr1_23 
+CHAO ins_shr2_21_n2 b2 inode_sr1_25 k1063 
+CHAO inode_sr2_21 ins_shr2_21_n1 ins_shr2_21_n2 k1064 
+AND ins_shr2_20_n1 inv$b2 inode_sr1_20 
+AND ins_shr2_20_n2 b2 inode_sr1_24 
+CHAO inode_sr2_20 ins_shr2_20_n1 ins_shr2_20_n2 k1067 
+AND ins_shr2_19_n1 inv$b2 inode_sr1_19 
+CHAO ins_shr2_19_n2 b2 inode_sr1_23 k1069 
 OR inode_sr2_19 ins_shr2_19_n1 ins_shr2_19_n2 
 AND ins_shr2_18_n1 inv$b2 inode_sr1_18 
 AND ins_shr2_18_n2 b2 inode_sr1_22 
-CHAO inode_sr2_18 ins_shr2_18_n1 ins_shr2_18_n2 k1073 
+OR inode_sr2_18 ins_shr2_18_n1 ins_shr2_18_n2 
 AND ins_shr2_17_n1 inv$b2 inode_sr1_17 
 AND ins_shr2_17_n2 b2 inode_sr1_21 
-OR inode_sr2_17 ins_shr2_17_n1 ins_shr2_17_n2 
+CHAO inode_sr2_17 ins_shr2_17_n1 ins_shr2_17_n2 k1076 
 AND ins_shr2_16_n1 inv$b2 inode_sr1_16 
 CHAO ins_shr2_16_n2 b2 inode_sr1_20 k1078 
 OR inode_sr2_16 ins_shr2_16_n1 ins_shr2_16_n2 
-AND ins_shr2_15_n1 inv$b2 inode_sr1_15 
+CHAO ins_shr2_15_n1 inv$b2 inode_sr1_15 k1080 
 AND ins_shr2_15_n2 b2 inode_sr1_19 
 OR inode_sr2_15 ins_shr2_15_n1 ins_shr2_15_n2 
-CHAO ins_shr2_14_n1 inv$b2 inode_sr1_14 k1083 
+AND ins_shr2_14_n1 inv$b2 inode_sr1_14 
 CHAO ins_shr2_14_n2 b2 inode_sr1_18 k1084 
 OR inode_sr2_14 ins_shr2_14_n1 ins_shr2_14_n2 
-CHAO ins_shr2_13_n1 inv$b2 inode_sr1_13 k1086 
-CHAO ins_shr2_13_n2 b2 inode_sr1_17 k1087 
-CHAO inode_sr2_13 ins_shr2_13_n1 ins_shr2_13_n2 k1088 
-CHAO ins_shr2_12_n1 inv$b2 inode_sr1_12 k1089 
+AND ins_shr2_13_n1 inv$b2 inode_sr1_13 
+AND ins_shr2_13_n2 b2 inode_sr1_17 
+OR inode_sr2_13 ins_shr2_13_n1 ins_shr2_13_n2 
+AND ins_shr2_12_n1 inv$b2 inode_sr1_12 
 AND ins_shr2_12_n2 b2 inode_sr1_16 
-CHAO inode_sr2_12 ins_shr2_12_n1 ins_shr2_12_n2 k1091 
+OR inode_sr2_12 ins_shr2_12_n1 ins_shr2_12_n2 
 AND ins_shr2_11_n1 inv$b2 inode_sr1_11 
 AND ins_shr2_11_n2 b2 inode_sr1_15 
 OR inode_sr2_11 ins_shr2_11_n1 ins_shr2_11_n2 
 AND ins_shr2_10_n1 inv$b2 inode_sr1_10 
-CHAO ins_shr2_10_n2 b2 inode_sr1_14 k1096 
+AND ins_shr2_10_n2 b2 inode_sr1_14 
 OR inode_sr2_10 ins_shr2_10_n1 ins_shr2_10_n2 
-CHAO ins_shr2_9_n1 inv$b2 inode_sr1_9 k1098 
-AND ins_shr2_9_n2 b2 inode_sr1_13 
+AND ins_shr2_9_n1 inv$b2 inode_sr1_9 
+CHAO ins_shr2_9_n2 b2 inode_sr1_13 k1099 
 OR inode_sr2_9 ins_shr2_9_n1 ins_shr2_9_n2 
-CHAO ins_shr2_8_n1 inv$b2 inode_sr1_8 k1101 
-AND ins_shr2_8_n2 b2 inode_sr1_12 
-CHAO inode_sr2_8 ins_shr2_8_n1 ins_shr2_8_n2 k1103 
+AND ins_shr2_8_n1 inv$b2 inode_sr1_8 
+CHAO ins_shr2_8_n2 b2 inode_sr1_12 k1102 
+OR inode_sr2_8 ins_shr2_8_n1 ins_shr2_8_n2 
 AND ins_shr2_7_n1 inv$b2 inode_sr1_7 
 AND ins_shr2_7_n2 b2 inode_sr1_11 
 OR inode_sr2_7 ins_shr2_7_n1 ins_shr2_7_n2 
-CHAO ins_shr2_6_n1 inv$b2 inode_sr1_6 k1107 
+AND ins_shr2_6_n1 inv$b2 inode_sr1_6 
 AND ins_shr2_6_n2 b2 inode_sr1_10 
 OR inode_sr2_6 ins_shr2_6_n1 ins_shr2_6_n2 
 AND ins_shr2_5_n1 inv$b2 inode_sr1_5 
 AND ins_shr2_5_n2 b2 inode_sr1_9 
 OR inode_sr2_5 ins_shr2_5_n1 ins_shr2_5_n2 
 AND ins_shr2_4_n1 inv$b2 inode_sr1_4 
-CHAO ins_shr2_4_n2 b2 inode_sr1_8 k1114 
+AND ins_shr2_4_n2 b2 inode_sr1_8 
 CHAO inode_sr2_4 ins_shr2_4_n1 ins_shr2_4_n2 k1115 
-AND ins_shr2_3_n1 inv$b2 inode_sr1_3 
+CHAO ins_shr2_3_n1 inv$b2 inode_sr1_3 k1116 
 AND ins_shr2_3_n2 b2 inode_sr1_7 
 OR inode_sr2_3 ins_shr2_3_n1 ins_shr2_3_n2 
 AND ins_shr2_2_n1 inv$b2 inode_sr1_2 
-CHAO ins_shr2_2_n2 b2 inode_sr1_6 k1120 
+AND ins_shr2_2_n2 b2 inode_sr1_6 
 OR inode_sr2_2 ins_shr2_2_n1 ins_shr2_2_n2 
 AND ins_shr2_1_n1 inv$b2 inode_sr1_1 
 AND ins_shr2_1_n2 b2 inode_sr1_5 
-OR inode_sr2_1 ins_shr2_1_n1 ins_shr2_1_n2 
-AND ins_shr2_0_n1 inv$b2 inode_sr1_0 
-CHAO ins_shr2_0_n2 b2 inode_sr1_4 k1126 
+CHAO inode_sr2_1 ins_shr2_1_n1 ins_shr2_1_n2 k1124 
+CHAO ins_shr2_0_n1 inv$b2 inode_sr1_0 k1125 
+AND ins_shr2_0_n2 b2 inode_sr1_4 
 OR inode_sr2_0 ins_shr2_0_n1 ins_shr2_0_n2 
 AND ins_shr3_31_n1 inv$b3 inode_sr2_31 
 AND ins_shr3_31_n2 b3 sr_ctrl 
 OR inode_sr3_31 ins_shr3_31_n1 ins_shr3_31_n2 
-AND ins_shr3_30_n1 inv$b3 inode_sr2_30 
-AND ins_shr3_30_n2 b3 sr_ctrl 
-CHAO inode_sr3_30 ins_shr3_30_n1 ins_shr3_30_n2 k1133 
+CHAO ins_shr3_30_n1 inv$b3 inode_sr2_30 k1131 
+CHAO ins_shr3_30_n2 b3 sr_ctrl k1132 
+OR inode_sr3_30 ins_shr3_30_n1 ins_shr3_30_n2 
 AND ins_shr3_29_n1 inv$b3 inode_sr2_29 
 AND ins_shr3_29_n2 b3 sr_ctrl 
-CHAO inode_sr3_29 ins_shr3_29_n1 ins_shr3_29_n2 k1136 
+OR inode_sr3_29 ins_shr3_29_n1 ins_shr3_29_n2 
 AND ins_shr3_28_n1 inv$b3 inode_sr2_28 
-AND ins_shr3_28_n2 b3 sr_ctrl 
-OR inode_sr3_28 ins_shr3_28_n1 ins_shr3_28_n2 
-AND ins_shr3_27_n1 inv$b3 inode_sr2_27 
+CHAO ins_shr3_28_n2 b3 sr_ctrl k1138 
+CHAO inode_sr3_28 ins_shr3_28_n1 ins_shr3_28_n2 k1139 
+CHAO ins_shr3_27_n1 inv$b3 inode_sr2_27 k1140 
 AND ins_shr3_27_n2 b3 sr_ctrl 
-OR inode_sr3_27 ins_shr3_27_n1 ins_shr3_27_n2 
+CHAO inode_sr3_27 ins_shr3_27_n1 ins_shr3_27_n2 k1142 
 AND ins_shr3_26_n1 inv$b3 inode_sr2_26 
 AND ins_shr3_26_n2 b3 sr_ctrl 
-OR inode_sr3_26 ins_shr3_26_n1 ins_shr3_26_n2 
-CHAO ins_shr3_25_n1 inv$b3 inode_sr2_25 k1146 
+CHAO inode_sr3_26 ins_shr3_26_n1 ins_shr3_26_n2 k1145 
+AND ins_shr3_25_n1 inv$b3 inode_sr2_25 
 AND ins_shr3_25_n2 b3 sr_ctrl 
 OR inode_sr3_25 ins_shr3_25_n1 ins_shr3_25_n2 
 CHAO ins_shr3_24_n1 inv$b3 inode_sr2_24 k1149 
-CHAO ins_shr3_24_n2 b3 sr_ctrl k1150 
+AND ins_shr3_24_n2 b3 sr_ctrl 
 OR inode_sr3_24 ins_shr3_24_n1 ins_shr3_24_n2 
-CHAO ins_shr3_23_n1 inv$b3 inode_sr2_23 k1152 
+AND ins_shr3_23_n1 inv$b3 inode_sr2_23 
 AND ins_shr3_23_n2 b3 inode_sr2_31 
 OR inode_sr3_23 ins_shr3_23_n1 ins_shr3_23_n2 
 AND ins_shr3_22_n1 inv$b3 inode_sr2_22 
 AND ins_shr3_22_n2 b3 inode_sr2_30 
-CHAO inode_sr3_22 ins_shr3_22_n1 ins_shr3_22_n2 k1157 
+OR inode_sr3_22 ins_shr3_22_n1 ins_shr3_22_n2 
 AND ins_shr3_21_n1 inv$b3 inode_sr2_21 
-CHAO ins_shr3_21_n2 b3 inode_sr2_29 k1159 
-CHAO inode_sr3_21 ins_shr3_21_n1 ins_shr3_21_n2 k1160 
+AND ins_shr3_21_n2 b3 inode_sr2_29 
+OR inode_sr3_21 ins_shr3_21_n1 ins_shr3_21_n2 
 AND ins_shr3_20_n1 inv$b3 inode_sr2_20 
 AND ins_shr3_20_n2 b3 inode_sr2_28 
 OR inode_sr3_20 ins_shr3_20_n1 ins_shr3_20_n2 
 AND ins_shr3_19_n1 inv$b3 inode_sr2_19 
-AND ins_shr3_19_n2 b3 inode_sr2_27 
+CHAO ins_shr3_19_n2 b3 inode_sr2_27 k1165 
 CHAO inode_sr3_19 ins_shr3_19_n1 ins_shr3_19_n2 k1166 
 AND ins_shr3_18_n1 inv$b3 inode_sr2_18 
 CHAO ins_shr3_18_n2 b3 inode_sr2_26 k1168 
 OR inode_sr3_18 ins_shr3_18_n1 ins_shr3_18_n2 
 AND ins_shr3_17_n1 inv$b3 inode_sr2_17 
 AND ins_shr3_17_n2 b3 inode_sr2_25 
-CHAO inode_sr3_17 ins_shr3_17_n1 ins_shr3_17_n2 k1172 
+OR inode_sr3_17 ins_shr3_17_n1 ins_shr3_17_n2 
 AND ins_shr3_16_n1 inv$b3 inode_sr2_16 
 AND ins_shr3_16_n2 b3 inode_sr2_24 
-OR inode_sr3_16 ins_shr3_16_n1 ins_shr3_16_n2 
+CHAO inode_sr3_16 ins_shr3_16_n1 ins_shr3_16_n2 k1175 
 AND ins_shr3_15_n1 inv$b3 inode_sr2_15 
 AND ins_shr3_15_n2 b3 inode_sr2_23 
-OR inode_sr3_15 ins_shr3_15_n1 ins_shr3_15_n2 
-CHAO ins_shr3_14_n1 inv$b3 inode_sr2_14 k1179 
-CHAO ins_shr3_14_n2 b3 inode_sr2_22 k1180 
+CHAO inode_sr3_15 ins_shr3_15_n1 ins_shr3_15_n2 k1178 
+AND ins_shr3_14_n1 inv$b3 inode_sr2_14 
+AND ins_shr3_14_n2 b3 inode_sr2_22 
 OR inode_sr3_14 ins_shr3_14_n1 ins_shr3_14_n2 
 AND ins_shr3_13_n1 inv$b3 inode_sr2_13 
-CHAO ins_shr3_13_n2 b3 inode_sr2_21 k1183 
+AND ins_shr3_13_n2 b3 inode_sr2_21 
 CHAO inode_sr3_13 ins_shr3_13_n1 ins_shr3_13_n2 k1184 
 CHAO ins_shr3_12_n1 inv$b3 inode_sr2_12 k1185 
-AND ins_shr3_12_n2 b3 inode_sr2_20 
-CHAO inode_sr3_12 ins_shr3_12_n1 ins_shr3_12_n2 k1187 
-CHAO ins_shr3_11_n1 inv$b3 inode_sr2_11 k1188 
-AND ins_shr3_11_n2 b3 inode_sr2_19 
+CHAO ins_shr3_12_n2 b3 inode_sr2_20 k1186 
+OR inode_sr3_12 ins_shr3_12_n1 ins_shr3_12_n2 
+AND ins_shr3_11_n1 inv$b3 inode_sr2_11 
+CHAO ins_shr3_11_n2 b3 inode_sr2_19 k1189 
 OR inode_sr3_11 ins_shr3_11_n1 ins_shr3_11_n2 
 AND ins_shr3_10_n1 inv$b3 inode_sr2_10 
 AND ins_shr3_10_n2 b3 inode_sr2_18 
-CHAO inode_sr3_10 ins_shr3_10_n1 ins_shr3_10_n2 k1193 
+OR inode_sr3_10 ins_shr3_10_n1 ins_shr3_10_n2 
 AND ins_shr3_9_n1 inv$b3 inode_sr2_9 
-AND ins_shr3_9_n2 b3 inode_sr2_17 
+CHAO ins_shr3_9_n2 b3 inode_sr2_17 k1195 
 OR inode_sr3_9 ins_shr3_9_n1 ins_shr3_9_n2 
 AND ins_shr3_8_n1 inv$b3 inode_sr2_8 
 AND ins_shr3_8_n2 b3 inode_sr2_16 
 OR inode_sr3_8 ins_shr3_8_n1 ins_shr3_8_n2 
-CHAO ins_shr3_7_n1 inv$b3 inode_sr2_7 k1200 
+AND ins_shr3_7_n1 inv$b3 inode_sr2_7 
 AND ins_shr3_7_n2 b3 inode_sr2_15 
-CHAO inode_sr3_7 ins_shr3_7_n1 ins_shr3_7_n2 k1202 
+OR inode_sr3_7 ins_shr3_7_n1 ins_shr3_7_n2 
 AND ins_shr3_6_n1 inv$b3 inode_sr2_6 
 AND ins_shr3_6_n2 b3 inode_sr2_14 
 OR inode_sr3_6 ins_shr3_6_n1 ins_shr3_6_n2 
-CHAO ins_shr3_5_n1 inv$b3 inode_sr2_5 k1206 
+AND ins_shr3_5_n1 inv$b3 inode_sr2_5 
 AND ins_shr3_5_n2 b3 inode_sr2_13 
 CHAO inode_sr3_5 ins_shr3_5_n1 ins_shr3_5_n2 k1208 
 AND ins_shr3_4_n1 inv$b3 inode_sr2_4 
 AND ins_shr3_4_n2 b3 inode_sr2_12 
 OR inode_sr3_4 ins_shr3_4_n1 ins_shr3_4_n2 
-CHAO ins_shr3_3_n1 inv$b3 inode_sr2_3 k1212 
+AND ins_shr3_3_n1 inv$b3 inode_sr2_3 
 CHAO ins_shr3_3_n2 b3 inode_sr2_11 k1213 
-OR inode_sr3_3 ins_shr3_3_n1 ins_shr3_3_n2 
-CHAO ins_shr3_2_n1 inv$b3 inode_sr2_2 k1215 
-AND ins_shr3_2_n2 b3 inode_sr2_10 
-OR inode_sr3_2 ins_shr3_2_n1 ins_shr3_2_n2 
-CHAO ins_shr3_1_n1 inv$b3 inode_sr2_1 k1218 
+CHAO inode_sr3_3 ins_shr3_3_n1 ins_shr3_3_n2 k1214 
+AND ins_shr3_2_n1 inv$b3 inode_sr2_2 
+CHAO ins_shr3_2_n2 b3 inode_sr2_10 k1216 
+CHAO inode_sr3_2 ins_shr3_2_n1 ins_shr3_2_n2 k1217 
+AND ins_shr3_1_n1 inv$b3 inode_sr2_1 
 AND ins_shr3_1_n2 b3 inode_sr2_9 
 OR inode_sr3_1 ins_shr3_1_n1 ins_shr3_1_n2 
 AND ins_shr3_0_n1 inv$b3 inode_sr2_0 
 AND ins_shr3_0_n2 b3 inode_sr2_8 
 OR inode_sr3_0 ins_shr3_0_n1 ins_shr3_0_n2 
-AND ins_shr4_31_n1 inv$b4 inode_sr3_31 
+CHAO ins_shr4_31_n1 inv$b4 inode_sr3_31 k1224 
 AND ins_shr4_31_n2 b4 sr_ctrl 
 OR y31_shr ins_shr4_31_n1 ins_shr4_31_n2 
 AND ins_shr4_30_n1 inv$b4 inode_sr3_30 
 AND ins_shr4_30_n2 b4 sr_ctrl 
 OR y30_shr ins_shr4_30_n1 ins_shr4_30_n2 
-AND ins_shr4_29_n1 inv$b4 inode_sr3_29 
-CHAO ins_shr4_29_n2 b4 sr_ctrl k1231 
+CHAO ins_shr4_29_n1 inv$b4 inode_sr3_29 k1230 
+AND ins_shr4_29_n2 b4 sr_ctrl 
 OR y29_shr ins_shr4_29_n1 ins_shr4_29_n2 
 AND ins_shr4_28_n1 inv$b4 inode_sr3_28 
 CHAO ins_shr4_28_n2 b4 sr_ctrl k1234 
 OR y28_shr ins_shr4_28_n1 ins_shr4_28_n2 
 AND ins_shr4_27_n1 inv$b4 inode_sr3_27 
-CHAO ins_shr4_27_n2 b4 sr_ctrl k1237 
-OR y27_shr ins_shr4_27_n1 ins_shr4_27_n2 
+AND ins_shr4_27_n2 b4 sr_ctrl 
+CHAO y27_shr ins_shr4_27_n1 ins_shr4_27_n2 k1238 
 AND ins_shr4_26_n1 inv$b4 inode_sr3_26 
 AND ins_shr4_26_n2 b4 sr_ctrl 
-CHAO y26_shr ins_shr4_26_n1 ins_shr4_26_n2 k1241 
-CHAO ins_shr4_25_n1 inv$b4 inode_sr3_25 k1242 
-AND ins_shr4_25_n2 b4 sr_ctrl 
+OR y26_shr ins_shr4_26_n1 ins_shr4_26_n2 
+AND ins_shr4_25_n1 inv$b4 inode_sr3_25 
+CHAO ins_shr4_25_n2 b4 sr_ctrl k1243 
 OR y25_shr ins_shr4_25_n1 ins_shr4_25_n2 
 AND ins_shr4_24_n1 inv$b4 inode_sr3_24 
 AND ins_shr4_24_n2 b4 sr_ctrl 
 OR y24_shr ins_shr4_24_n1 ins_shr4_24_n2 
 CHAO ins_shr4_23_n1 inv$b4 inode_sr3_23 k1248 
-CHAO ins_shr4_23_n2 b4 sr_ctrl k1249 
-OR y23_shr ins_shr4_23_n1 ins_shr4_23_n2 
+AND ins_shr4_23_n2 b4 sr_ctrl 
+CHAO y23_shr ins_shr4_23_n1 ins_shr4_23_n2 k1250 
 AND ins_shr4_22_n1 inv$b4 inode_sr3_22 
-AND ins_shr4_22_n2 b4 sr_ctrl 
+CHAO ins_shr4_22_n2 b4 sr_ctrl k1252 
 OR y22_shr ins_shr4_22_n1 ins_shr4_22_n2 
 AND ins_shr4_21_n1 inv$b4 inode_sr3_21 
-CHAO ins_shr4_21_n2 b4 sr_ctrl k1255 
+AND ins_shr4_21_n2 b4 sr_ctrl 
 OR y21_shr ins_shr4_21_n1 ins_shr4_21_n2 
-AND ins_shr4_20_n1 inv$b4 inode_sr3_20 
+CHAO ins_shr4_20_n1 inv$b4 inode_sr3_20 k1257 
 AND ins_shr4_20_n2 b4 sr_ctrl 
 OR y20_shr ins_shr4_20_n1 ins_shr4_20_n2 
-AND ins_shr4_19_n1 inv$b4 inode_sr3_19 
-CHAO ins_shr4_19_n2 b4 sr_ctrl k1261 
-OR y19_shr ins_shr4_19_n1 ins_shr4_19_n2 
-AND ins_shr4_18_n1 inv$b4 inode_sr3_18 
+CHAO ins_shr4_19_n1 inv$b4 inode_sr3_19 k1260 
+AND ins_shr4_19_n2 b4 sr_ctrl 
+CHAO y19_shr ins_shr4_19_n1 ins_shr4_19_n2 k1262 
+CHAO ins_shr4_18_n1 inv$b4 inode_sr3_18 k1263 
 AND ins_shr4_18_n2 b4 sr_ctrl 
 OR y18_shr ins_shr4_18_n1 ins_shr4_18_n2 
-CHAO ins_shr4_17_n1 inv$b4 inode_sr3_17 k1266 
-AND ins_shr4_17_n2 b4 sr_ctrl 
+AND ins_shr4_17_n1 inv$b4 inode_sr3_17 
+CHAO ins_shr4_17_n2 b4 sr_ctrl k1267 
 OR y17_shr ins_shr4_17_n1 ins_shr4_17_n2 
 AND ins_shr4_16_n1 inv$b4 inode_sr3_16 
 CHAO ins_shr4_16_n2 b4 sr_ctrl k1270 
 OR y16_shr ins_shr4_16_n1 ins_shr4_16_n2 
 AND ins_shr4_15_n1 inv$b4 inode_sr3_15 
-AND ins_shr4_15_n2 b4 inode_sr3_31 
+CHAO ins_shr4_15_n2 b4 inode_sr3_31 k1273 
 OR y15_shr ins_shr4_15_n1 ins_shr4_15_n2 
 AND ins_shr4_14_n1 inv$b4 inode_sr3_14 
-CHAO ins_shr4_14_n2 b4 inode_sr3_30 k1276 
+AND ins_shr4_14_n2 b4 inode_sr3_30 
 OR y14_shr ins_shr4_14_n1 ins_shr4_14_n2 
-CHAO ins_shr4_13_n1 inv$b4 inode_sr3_13 k1278 
+AND ins_shr4_13_n1 inv$b4 inode_sr3_13 
 AND ins_shr4_13_n2 b4 inode_sr3_29 
-CHAO y13_shr ins_shr4_13_n1 ins_shr4_13_n2 k1280 
-CHAO ins_shr4_12_n1 inv$b4 inode_sr3_12 k1281 
+OR y13_shr ins_shr4_13_n1 ins_shr4_13_n2 
+AND ins_shr4_12_n1 inv$b4 inode_sr3_12 
 AND ins_shr4_12_n2 b4 inode_sr3_28 
 OR y12_shr ins_shr4_12_n1 ins_shr4_12_n2 
 AND ins_shr4_11_n1 inv$b4 inode_sr3_11 
@@ -1287,7 +1287,7 @@ OR y11_shr ins_shr4_11_n1 ins_shr4_11_n2
 AND ins_shr4_10_n1 inv$b4 inode_sr3_10 
 AND ins_shr4_10_n2 b4 inode_sr3_26 
 OR y10_shr ins_shr4_10_n1 ins_shr4_10_n2 
-AND ins_shr4_9_n1 inv$b4 inode_sr3_9 
+CHAO ins_shr4_9_n1 inv$b4 inode_sr3_9 k1290 
 AND ins_shr4_9_n2 b4 inode_sr3_25 
 OR y9_shr ins_shr4_9_n1 ins_shr4_9_n2 
 AND ins_shr4_8_n1 inv$b4 inode_sr3_8 
@@ -1295,7 +1295,7 @@ CHAO ins_shr4_8_n2 b4 inode_sr3_24 k1294
 OR y8_shr ins_shr4_8_n1 ins_shr4_8_n2 
 CHAO ins_shr4_7_n1 inv$b4 inode_sr3_7 k1296 
 CHAO ins_shr4_7_n2 b4 inode_sr3_23 k1297 
-OR y7_shr ins_shr4_7_n1 ins_shr4_7_n2 
+CHAO y7_shr ins_shr4_7_n1 ins_shr4_7_n2 k1298 
 CHAO ins_shr4_6_n1 inv$b4 inode_sr3_6 k1299 
 AND ins_shr4_6_n2 b4 inode_sr3_22 
 OR y6_shr ins_shr4_6_n1 ins_shr4_6_n2 
@@ -1303,131 +1303,131 @@ AND ins_shr4_5_n1 inv$b4 inode_sr3_5
 AND ins_shr4_5_n2 b4 inode_sr3_21 
 OR y5_shr ins_shr4_5_n1 ins_shr4_5_n2 
 CHAO ins_shr4_4_n1 inv$b4 inode_sr3_4 k1305 
-AND ins_shr4_4_n2 b4 inode_sr3_20 
-CHAO y4_shr ins_shr4_4_n1 ins_shr4_4_n2 k1307 
+CHAO ins_shr4_4_n2 b4 inode_sr3_20 k1306 
+OR y4_shr ins_shr4_4_n1 ins_shr4_4_n2 
 AND ins_shr4_3_n1 inv$b4 inode_sr3_3 
 AND ins_shr4_3_n2 b4 inode_sr3_19 
 OR y3_shr ins_shr4_3_n1 ins_shr4_3_n2 
 AND ins_shr4_2_n1 inv$b4 inode_sr3_2 
 CHAO ins_shr4_2_n2 b4 inode_sr3_18 k1312 
-OR y2_shr ins_shr4_2_n1 ins_shr4_2_n2 
-AND ins_shr4_1_n1 inv$b4 inode_sr3_1 
-AND ins_shr4_1_n2 b4 inode_sr3_17 
+CHAO y2_shr ins_shr4_2_n1 ins_shr4_2_n2 k1313 
+CHAO ins_shr4_1_n1 inv$b4 inode_sr3_1 k1314 
+CHAO ins_shr4_1_n2 b4 inode_sr3_17 k1315 
 OR y1_shr ins_shr4_1_n1 ins_shr4_1_n2 
-CHAO ins_shr4_0_n1 inv$b4 inode_sr3_0 k1317 
+AND ins_shr4_0_n1 inv$b4 inode_sr3_0 
 CHAO ins_shr4_0_n2 b4 inode_sr3_16 k1318 
-OR y0_shr ins_shr4_0_n1 ins_shr4_0_n2 
-CHAO out_mux_0_0_n1 inv$op0 y0_and k1320 
+CHAO y0_shr ins_shr4_0_n1 ins_shr4_0_n2 k1319 
+AND out_mux_0_0_n1 inv$op0 y0_and 
 AND out_mux_0_0_n2 op0 y0_or 
 OR out_mux_0__ysig0 out_mux_0_0_n1 out_mux_0_0_n2 
 AND out_mux_0_1_n1 inv$op0 y0_xor 
-CHAO out_mux_0_1_n2 op0 y0_addsub k1324 
+AND out_mux_0_1_n2 op0 y0_addsub 
 OR out_mux_0__ysig1 out_mux_0_1_n1 out_mux_0_1_n2 
 AND out_mux_0_2_n1 inv$op0 y0_shl 
 AND out_mux_0_2_n2 op0 y0_shr 
 OR out_mux_0__ysig2 out_mux_0_2_n1 out_mux_0_2_n2 
-CHAO out_mux_0_3_n1 inv$op1 out_mux_0__ysig0 k1329 
+AND out_mux_0_3_n1 inv$op1 out_mux_0__ysig0 
 AND out_mux_0_3_n2 op1 out_mux_0__ysig1 
 OR out_mux_0__ysig3 out_mux_0_3_n1 out_mux_0_3_n2 
 AND out_mux_0_4_n1 inv$op2 out_mux_0__ysig3 
 AND out_mux_0_4_n2 op2 out_mux_0__ysig2 
 OR y0 out_mux_0_4_n1 out_mux_0_4_n2 
-AND out_mux_1_0_n1 inv$op0 y1_and 
-AND out_mux_1_0_n2 op0 y1_or 
+CHAO out_mux_1_0_n1 inv$op0 y1_and k1335 
+CHAO out_mux_1_0_n2 op0 y1_or k1336 
 OR out_mux_1__ysig0 out_mux_1_0_n1 out_mux_1_0_n2 
-AND out_mux_1_1_n1 inv$op0 y1_xor 
-CHAO out_mux_1_1_n2 op0 y1_addsub k1339 
+CHAO out_mux_1_1_n1 inv$op0 y1_xor k1338 
+AND out_mux_1_1_n2 op0 y1_addsub 
 OR out_mux_1__ysig1 out_mux_1_1_n1 out_mux_1_1_n2 
-CHAO out_mux_1_2_n1 inv$op0 y1_shl k1341 
+AND out_mux_1_2_n1 inv$op0 y1_shl 
 AND out_mux_1_2_n2 op0 y1_shr 
 OR out_mux_1__ysig2 out_mux_1_2_n1 out_mux_1_2_n2 
 AND out_mux_1_3_n1 inv$op1 out_mux_1__ysig0 
 AND out_mux_1_3_n2 op1 out_mux_1__ysig1 
-OR out_mux_1__ysig3 out_mux_1_3_n1 out_mux_1_3_n2 
+CHAO out_mux_1__ysig3 out_mux_1_3_n1 out_mux_1_3_n2 k1346 
 AND out_mux_1_4_n1 inv$op2 out_mux_1__ysig3 
 AND out_mux_1_4_n2 op2 out_mux_1__ysig2 
-OR y1 out_mux_1_4_n1 out_mux_1_4_n2 
+CHAO y1 out_mux_1_4_n1 out_mux_1_4_n2 k1349 
 AND out_mux_2_0_n1 inv$op0 y2_and 
-AND out_mux_2_0_n2 op0 y2_or 
+CHAO out_mux_2_0_n2 op0 y2_or k1351 
 OR out_mux_2__ysig0 out_mux_2_0_n1 out_mux_2_0_n2 
 AND out_mux_2_1_n1 inv$op0 y2_xor 
 AND out_mux_2_1_n2 op0 y2_addsub 
-OR out_mux_2__ysig1 out_mux_2_1_n1 out_mux_2_1_n2 
-CHAO out_mux_2_2_n1 inv$op0 y2_shl k1356 
+CHAO out_mux_2__ysig1 out_mux_2_1_n1 out_mux_2_1_n2 k1355 
+AND out_mux_2_2_n1 inv$op0 y2_shl 
 AND out_mux_2_2_n2 op0 y2_shr 
 OR out_mux_2__ysig2 out_mux_2_2_n1 out_mux_2_2_n2 
 AND out_mux_2_3_n1 inv$op1 out_mux_2__ysig0 
 AND out_mux_2_3_n2 op1 out_mux_2__ysig1 
 OR out_mux_2__ysig3 out_mux_2_3_n1 out_mux_2_3_n2 
 AND out_mux_2_4_n1 inv$op2 out_mux_2__ysig3 
-CHAO out_mux_2_4_n2 op2 out_mux_2__ysig2 k1363 
+AND out_mux_2_4_n2 op2 out_mux_2__ysig2 
 OR y2 out_mux_2_4_n1 out_mux_2_4_n2 
 AND out_mux_3_0_n1 inv$op0 y3_and 
 AND out_mux_3_0_n2 op0 y3_or 
 CHAO out_mux_3__ysig0 out_mux_3_0_n1 out_mux_3_0_n2 k1367 
 AND out_mux_3_1_n1 inv$op0 y3_xor 
-CHAO out_mux_3_1_n2 op0 y3_addsub k1369 
+AND out_mux_3_1_n2 op0 y3_addsub 
 OR out_mux_3__ysig1 out_mux_3_1_n1 out_mux_3_1_n2 
 AND out_mux_3_2_n1 inv$op0 y3_shl 
-CHAO out_mux_3_2_n2 op0 y3_shr k1372 
-CHAO out_mux_3__ysig2 out_mux_3_2_n1 out_mux_3_2_n2 k1373 
+AND out_mux_3_2_n2 op0 y3_shr 
+OR out_mux_3__ysig2 out_mux_3_2_n1 out_mux_3_2_n2 
 AND out_mux_3_3_n1 inv$op1 out_mux_3__ysig0 
 CHAO out_mux_3_3_n2 op1 out_mux_3__ysig1 k1375 
 OR out_mux_3__ysig3 out_mux_3_3_n1 out_mux_3_3_n2 
 AND out_mux_3_4_n1 inv$op2 out_mux_3__ysig3 
 AND out_mux_3_4_n2 op2 out_mux_3__ysig2 
-OR y3 out_mux_3_4_n1 out_mux_3_4_n2 
+CHAO y3 out_mux_3_4_n1 out_mux_3_4_n2 k1379 
 AND out_mux_4_0_n1 inv$op0 y4_and 
 AND out_mux_4_0_n2 op0 y4_or 
-OR out_mux_4__ysig0 out_mux_4_0_n1 out_mux_4_0_n2 
-CHAO out_mux_4_1_n1 inv$op0 y4_xor k1383 
+CHAO out_mux_4__ysig0 out_mux_4_0_n1 out_mux_4_0_n2 k1382 
+AND out_mux_4_1_n1 inv$op0 y4_xor 
 AND out_mux_4_1_n2 op0 y4_addsub 
 OR out_mux_4__ysig1 out_mux_4_1_n1 out_mux_4_1_n2 
 AND out_mux_4_2_n1 inv$op0 y4_shl 
 AND out_mux_4_2_n2 op0 y4_shr 
-CHAO out_mux_4__ysig2 out_mux_4_2_n1 out_mux_4_2_n2 k1388 
+OR out_mux_4__ysig2 out_mux_4_2_n1 out_mux_4_2_n2 
 AND out_mux_4_3_n1 inv$op1 out_mux_4__ysig0 
 AND out_mux_4_3_n2 op1 out_mux_4__ysig1 
-OR out_mux_4__ysig3 out_mux_4_3_n1 out_mux_4_3_n2 
+CHAO out_mux_4__ysig3 out_mux_4_3_n1 out_mux_4_3_n2 k1391 
 AND out_mux_4_4_n1 inv$op2 out_mux_4__ysig3 
 CHAO out_mux_4_4_n2 op2 out_mux_4__ysig2 k1393 
 CHAO y4 out_mux_4_4_n1 out_mux_4_4_n2 k1394 
-CHAO out_mux_5_0_n1 inv$op0 y5_and k1395 
+AND out_mux_5_0_n1 inv$op0 y5_and 
 AND out_mux_5_0_n2 op0 y5_or 
 OR out_mux_5__ysig0 out_mux_5_0_n1 out_mux_5_0_n2 
 CHAO out_mux_5_1_n1 inv$op0 y5_xor k1398 
-CHAO out_mux_5_1_n2 op0 y5_addsub k1399 
+AND out_mux_5_1_n2 op0 y5_addsub 
 OR out_mux_5__ysig1 out_mux_5_1_n1 out_mux_5_1_n2 
 AND out_mux_5_2_n1 inv$op0 y5_shl 
 AND out_mux_5_2_n2 op0 y5_shr 
-CHAO out_mux_5__ysig2 out_mux_5_2_n1 out_mux_5_2_n2 k1403 
+OR out_mux_5__ysig2 out_mux_5_2_n1 out_mux_5_2_n2 
 AND out_mux_5_3_n1 inv$op1 out_mux_5__ysig0 
-CHAO out_mux_5_3_n2 op1 out_mux_5__ysig1 k1405 
+AND out_mux_5_3_n2 op1 out_mux_5__ysig1 
 OR out_mux_5__ysig3 out_mux_5_3_n1 out_mux_5_3_n2 
 AND out_mux_5_4_n1 inv$op2 out_mux_5__ysig3 
 AND out_mux_5_4_n2 op2 out_mux_5__ysig2 
 OR y5 out_mux_5_4_n1 out_mux_5_4_n2 
 AND out_mux_6_0_n1 inv$op0 y6_and 
-AND out_mux_6_0_n2 op0 y6_or 
-CHAO out_mux_6__ysig0 out_mux_6_0_n1 out_mux_6_0_n2 k1412 
-AND out_mux_6_1_n1 inv$op0 y6_xor 
+CHAO out_mux_6_0_n2 op0 y6_or k1411 
+OR out_mux_6__ysig0 out_mux_6_0_n1 out_mux_6_0_n2 
+CHAO out_mux_6_1_n1 inv$op0 y6_xor k1413 
 AND out_mux_6_1_n2 op0 y6_addsub 
 OR out_mux_6__ysig1 out_mux_6_1_n1 out_mux_6_1_n2 
-CHAO out_mux_6_2_n1 inv$op0 y6_shl k1416 
+AND out_mux_6_2_n1 inv$op0 y6_shl 
 AND out_mux_6_2_n2 op0 y6_shr 
 OR out_mux_6__ysig2 out_mux_6_2_n1 out_mux_6_2_n2 
-CHAO out_mux_6_3_n1 inv$op1 out_mux_6__ysig0 k1419 
+AND out_mux_6_3_n1 inv$op1 out_mux_6__ysig0 
 AND out_mux_6_3_n2 op1 out_mux_6__ysig1 
 OR out_mux_6__ysig3 out_mux_6_3_n1 out_mux_6_3_n2 
 AND out_mux_6_4_n1 inv$op2 out_mux_6__ysig3 
 AND out_mux_6_4_n2 op2 out_mux_6__ysig2 
 OR y6 out_mux_6_4_n1 out_mux_6_4_n2 
-CHAO out_mux_7_0_n1 inv$op0 y7_and k1425 
-CHAO out_mux_7_0_n2 op0 y7_or k1426 
-OR out_mux_7__ysig0 out_mux_7_0_n1 out_mux_7_0_n2 
-AND out_mux_7_1_n1 inv$op0 y7_xor 
+AND out_mux_7_0_n1 inv$op0 y7_and 
+AND out_mux_7_0_n2 op0 y7_or 
+CHAO out_mux_7__ysig0 out_mux_7_0_n1 out_mux_7_0_n2 k1427 
+CHAO out_mux_7_1_n1 inv$op0 y7_xor k1428 
 AND out_mux_7_1_n2 op0 y7_addsub 
-OR out_mux_7__ysig1 out_mux_7_1_n1 out_mux_7_1_n2 
+CHAO out_mux_7__ysig1 out_mux_7_1_n1 out_mux_7_1_n2 k1430 
 AND out_mux_7_2_n1 inv$op0 y7_shl 
 CHAO out_mux_7_2_n2 op0 y7_shr k1432 
 OR out_mux_7__ysig2 out_mux_7_2_n1 out_mux_7_2_n2 
@@ -1437,12 +1437,12 @@ OR out_mux_7__ysig3 out_mux_7_3_n1 out_mux_7_3_n2
 CHAO out_mux_7_4_n1 inv$op2 out_mux_7__ysig3 k1437 
 AND out_mux_7_4_n2 op2 out_mux_7__ysig2 
 OR y7 out_mux_7_4_n1 out_mux_7_4_n2 
-CHAO out_mux_8_0_n1 inv$op0 y8_and k1440 
+AND out_mux_8_0_n1 inv$op0 y8_and 
 AND out_mux_8_0_n2 op0 y8_or 
 OR out_mux_8__ysig0 out_mux_8_0_n1 out_mux_8_0_n2 
 AND out_mux_8_1_n1 inv$op0 y8_xor 
 AND out_mux_8_1_n2 op0 y8_addsub 
-CHAO out_mux_8__ysig1 out_mux_8_1_n1 out_mux_8_1_n2 k1445 
+OR out_mux_8__ysig1 out_mux_8_1_n1 out_mux_8_1_n2 
 AND out_mux_8_2_n1 inv$op0 y8_shl 
 AND out_mux_8_2_n2 op0 y8_shr 
 CHAO out_mux_8__ysig2 out_mux_8_2_n1 out_mux_8_2_n2 k1448 
@@ -1450,90 +1450,90 @@ AND out_mux_8_3_n1 inv$op1 out_mux_8__ysig0
 AND out_mux_8_3_n2 op1 out_mux_8__ysig1 
 OR out_mux_8__ysig3 out_mux_8_3_n1 out_mux_8_3_n2 
 AND out_mux_8_4_n1 inv$op2 out_mux_8__ysig3 
-AND out_mux_8_4_n2 op2 out_mux_8__ysig2 
+CHAO out_mux_8_4_n2 op2 out_mux_8__ysig2 k1453 
 OR y8 out_mux_8_4_n1 out_mux_8_4_n2 
-AND out_mux_9_0_n1 inv$op0 y9_and 
+CHAO out_mux_9_0_n1 inv$op0 y9_and k1455 
 CHAO out_mux_9_0_n2 op0 y9_or k1456 
-OR out_mux_9__ysig0 out_mux_9_0_n1 out_mux_9_0_n2 
-AND out_mux_9_1_n1 inv$op0 y9_xor 
+CHAO out_mux_9__ysig0 out_mux_9_0_n1 out_mux_9_0_n2 k1457 
+CHAO out_mux_9_1_n1 inv$op0 y9_xor k1458 
 AND out_mux_9_1_n2 op0 y9_addsub 
-CHAO out_mux_9__ysig1 out_mux_9_1_n1 out_mux_9_1_n2 k1460 
-AND out_mux_9_2_n1 inv$op0 y9_shl 
+OR out_mux_9__ysig1 out_mux_9_1_n1 out_mux_9_1_n2 
+CHAO out_mux_9_2_n1 inv$op0 y9_shl k1461 
 AND out_mux_9_2_n2 op0 y9_shr 
 OR out_mux_9__ysig2 out_mux_9_2_n1 out_mux_9_2_n2 
 CHAO out_mux_9_3_n1 inv$op1 out_mux_9__ysig0 k1464 
 AND out_mux_9_3_n2 op1 out_mux_9__ysig1 
 CHAO out_mux_9__ysig3 out_mux_9_3_n1 out_mux_9_3_n2 k1466 
-CHAO out_mux_9_4_n1 inv$op2 out_mux_9__ysig3 k1467 
+AND out_mux_9_4_n1 inv$op2 out_mux_9__ysig3 
 AND out_mux_9_4_n2 op2 out_mux_9__ysig2 
 OR y9 out_mux_9_4_n1 out_mux_9_4_n2 
 CHAO out_mux_10_0_n1 inv$op0 y10_and k1470 
 AND out_mux_10_0_n2 op0 y10_or 
-OR out_mux_10__ysig0 out_mux_10_0_n1 out_mux_10_0_n2 
-AND out_mux_10_1_n1 inv$op0 y10_xor 
+CHAO out_mux_10__ysig0 out_mux_10_0_n1 out_mux_10_0_n2 k1472 
+CHAO out_mux_10_1_n1 inv$op0 y10_xor k1473 
 AND out_mux_10_1_n2 op0 y10_addsub 
 OR out_mux_10__ysig1 out_mux_10_1_n1 out_mux_10_1_n2 
-AND out_mux_10_2_n1 inv$op0 y10_shl 
+CHAO out_mux_10_2_n1 inv$op0 y10_shl k1476 
 CHAO out_mux_10_2_n2 op0 y10_shr k1477 
 OR out_mux_10__ysig2 out_mux_10_2_n1 out_mux_10_2_n2 
 AND out_mux_10_3_n1 inv$op1 out_mux_10__ysig0 
-AND out_mux_10_3_n2 op1 out_mux_10__ysig1 
+CHAO out_mux_10_3_n2 op1 out_mux_10__ysig1 k1480 
 CHAO out_mux_10__ysig3 out_mux_10_3_n1 out_mux_10_3_n2 k1481 
-CHAO out_mux_10_4_n1 inv$op2 out_mux_10__ysig3 k1482 
+AND out_mux_10_4_n1 inv$op2 out_mux_10__ysig3 
 AND out_mux_10_4_n2 op2 out_mux_10__ysig2 
 OR y10 out_mux_10_4_n1 out_mux_10_4_n2 
-CHAO out_mux_11_0_n1 inv$op0 y11_and k1485 
+AND out_mux_11_0_n1 inv$op0 y11_and 
 AND out_mux_11_0_n2 op0 y11_or 
 OR out_mux_11__ysig0 out_mux_11_0_n1 out_mux_11_0_n2 
 AND out_mux_11_1_n1 inv$op0 y11_xor 
-AND out_mux_11_1_n2 op0 y11_addsub 
+CHAO out_mux_11_1_n2 op0 y11_addsub k1489 
 OR out_mux_11__ysig1 out_mux_11_1_n1 out_mux_11_1_n2 
 AND out_mux_11_2_n1 inv$op0 y11_shl 
-CHAO out_mux_11_2_n2 op0 y11_shr k1492 
-OR out_mux_11__ysig2 out_mux_11_2_n1 out_mux_11_2_n2 
-AND out_mux_11_3_n1 inv$op1 out_mux_11__ysig0 
-AND out_mux_11_3_n2 op1 out_mux_11__ysig1 
+AND out_mux_11_2_n2 op0 y11_shr 
+CHAO out_mux_11__ysig2 out_mux_11_2_n1 out_mux_11_2_n2 k1493 
+CHAO out_mux_11_3_n1 inv$op1 out_mux_11__ysig0 k1494 
+CHAO out_mux_11_3_n2 op1 out_mux_11__ysig1 k1495 
 OR out_mux_11__ysig3 out_mux_11_3_n1 out_mux_11_3_n2 
 AND out_mux_11_4_n1 inv$op2 out_mux_11__ysig3 
 AND out_mux_11_4_n2 op2 out_mux_11__ysig2 
-OR y11 out_mux_11_4_n1 out_mux_11_4_n2 
-AND out_mux_12_0_n1 inv$op0 y12_and 
+CHAO y11 out_mux_11_4_n1 out_mux_11_4_n2 k1499 
+CHAO out_mux_12_0_n1 inv$op0 y12_and k1500 
 AND out_mux_12_0_n2 op0 y12_or 
 OR out_mux_12__ysig0 out_mux_12_0_n1 out_mux_12_0_n2 
 AND out_mux_12_1_n1 inv$op0 y12_xor 
 AND out_mux_12_1_n2 op0 y12_addsub 
 OR out_mux_12__ysig1 out_mux_12_1_n1 out_mux_12_1_n2 
-AND out_mux_12_2_n1 inv$op0 y12_shl 
+CHAO out_mux_12_2_n1 inv$op0 y12_shl k1506 
 AND out_mux_12_2_n2 op0 y12_shr 
 OR out_mux_12__ysig2 out_mux_12_2_n1 out_mux_12_2_n2 
 AND out_mux_12_3_n1 inv$op1 out_mux_12__ysig0 
-AND out_mux_12_3_n2 op1 out_mux_12__ysig1 
+CHAO out_mux_12_3_n2 op1 out_mux_12__ysig1 k1510 
 OR out_mux_12__ysig3 out_mux_12_3_n1 out_mux_12_3_n2 
 AND out_mux_12_4_n1 inv$op2 out_mux_12__ysig3 
-AND out_mux_12_4_n2 op2 out_mux_12__ysig2 
+CHAO out_mux_12_4_n2 op2 out_mux_12__ysig2 k1513 
 OR y12 out_mux_12_4_n1 out_mux_12_4_n2 
 AND out_mux_13_0_n1 inv$op0 y13_and 
-AND out_mux_13_0_n2 op0 y13_or 
+CHAO out_mux_13_0_n2 op0 y13_or k1516 
 OR out_mux_13__ysig0 out_mux_13_0_n1 out_mux_13_0_n2 
 CHAO out_mux_13_1_n1 inv$op0 y13_xor k1518 
-AND out_mux_13_1_n2 op0 y13_addsub 
+CHAO out_mux_13_1_n2 op0 y13_addsub k1519 
 OR out_mux_13__ysig1 out_mux_13_1_n1 out_mux_13_1_n2 
-AND out_mux_13_2_n1 inv$op0 y13_shl 
+CHAO out_mux_13_2_n1 inv$op0 y13_shl k1521 
 CHAO out_mux_13_2_n2 op0 y13_shr k1522 
-OR out_mux_13__ysig2 out_mux_13_2_n1 out_mux_13_2_n2 
+CHAO out_mux_13__ysig2 out_mux_13_2_n1 out_mux_13_2_n2 k1523 
 AND out_mux_13_3_n1 inv$op1 out_mux_13__ysig0 
 AND out_mux_13_3_n2 op1 out_mux_13__ysig1 
 OR out_mux_13__ysig3 out_mux_13_3_n1 out_mux_13_3_n2 
 AND out_mux_13_4_n1 inv$op2 out_mux_13__ysig3 
-CHAO out_mux_13_4_n2 op2 out_mux_13__ysig2 k1528 
+AND out_mux_13_4_n2 op2 out_mux_13__ysig2 
 OR y13 out_mux_13_4_n1 out_mux_13_4_n2 
 AND out_mux_14_0_n1 inv$op0 y14_and 
-CHAO out_mux_14_0_n2 op0 y14_or k1531 
-CHAO out_mux_14__ysig0 out_mux_14_0_n1 out_mux_14_0_n2 k1532 
-CHAO out_mux_14_1_n1 inv$op0 y14_xor k1533 
+AND out_mux_14_0_n2 op0 y14_or 
+OR out_mux_14__ysig0 out_mux_14_0_n1 out_mux_14_0_n2 
+AND out_mux_14_1_n1 inv$op0 y14_xor 
 AND out_mux_14_1_n2 op0 y14_addsub 
 OR out_mux_14__ysig1 out_mux_14_1_n1 out_mux_14_1_n2 
-CHAO out_mux_14_2_n1 inv$op0 y14_shl k1536 
+AND out_mux_14_2_n1 inv$op0 y14_shl 
 AND out_mux_14_2_n2 op0 y14_shr 
 OR out_mux_14__ysig2 out_mux_14_2_n1 out_mux_14_2_n2 
 AND out_mux_14_3_n1 inv$op1 out_mux_14__ysig0 
@@ -1548,7 +1548,7 @@ CHAO out_mux_15__ysig0 out_mux_15_0_n1 out_mux_15_0_n2 k1547
 AND out_mux_15_1_n1 inv$op0 y15_xor 
 AND out_mux_15_1_n2 op0 y15_addsub 
 OR out_mux_15__ysig1 out_mux_15_1_n1 out_mux_15_1_n2 
-AND out_mux_15_2_n1 inv$op0 y15_shl 
+CHAO out_mux_15_2_n1 inv$op0 y15_shl k1551 
 AND out_mux_15_2_n2 op0 y15_shr 
 OR out_mux_15__ysig2 out_mux_15_2_n1 out_mux_15_2_n2 
 AND out_mux_15_3_n1 inv$op1 out_mux_15__ysig0 
@@ -1556,10 +1556,10 @@ AND out_mux_15_3_n2 op1 out_mux_15__ysig1
 OR out_mux_15__ysig3 out_mux_15_3_n1 out_mux_15_3_n2 
 AND out_mux_15_4_n1 inv$op2 out_mux_15__ysig3 
 AND out_mux_15_4_n2 op2 out_mux_15__ysig2 
-CHAO y15 out_mux_15_4_n1 out_mux_15_4_n2 k1559 
+OR y15 out_mux_15_4_n1 out_mux_15_4_n2 
 AND out_mux_16_0_n1 inv$op0 y16_and 
 AND out_mux_16_0_n2 op0 y16_or 
-CHAO out_mux_16__ysig0 out_mux_16_0_n1 out_mux_16_0_n2 k1562 
+OR out_mux_16__ysig0 out_mux_16_0_n1 out_mux_16_0_n2 
 AND out_mux_16_1_n1 inv$op0 y16_xor 
 CHAO out_mux_16_1_n2 op0 y16_addsub k1564 
 OR out_mux_16__ysig1 out_mux_16_1_n1 out_mux_16_1_n2 
@@ -1570,28 +1570,28 @@ AND out_mux_16_3_n1 inv$op1 out_mux_16__ysig0
 CHAO out_mux_16_3_n2 op1 out_mux_16__ysig1 k1570 
 OR out_mux_16__ysig3 out_mux_16_3_n1 out_mux_16_3_n2 
 AND out_mux_16_4_n1 inv$op2 out_mux_16__ysig3 
-AND out_mux_16_4_n2 op2 out_mux_16__ysig2 
-CHAO y16 out_mux_16_4_n1 out_mux_16_4_n2 k1574 
+CHAO out_mux_16_4_n2 op2 out_mux_16__ysig2 k1573 
+OR y16 out_mux_16_4_n1 out_mux_16_4_n2 
 AND out_mux_17_0_n1 inv$op0 y17_and 
 AND out_mux_17_0_n2 op0 y17_or 
 OR out_mux_17__ysig0 out_mux_17_0_n1 out_mux_17_0_n2 
 AND out_mux_17_1_n1 inv$op0 y17_xor 
 AND out_mux_17_1_n2 op0 y17_addsub 
 OR out_mux_17__ysig1 out_mux_17_1_n1 out_mux_17_1_n2 
-CHAO out_mux_17_2_n1 inv$op0 y17_shl k1581 
-CHAO out_mux_17_2_n2 op0 y17_shr k1582 
-OR out_mux_17__ysig2 out_mux_17_2_n1 out_mux_17_2_n2 
+AND out_mux_17_2_n1 inv$op0 y17_shl 
+AND out_mux_17_2_n2 op0 y17_shr 
+CHAO out_mux_17__ysig2 out_mux_17_2_n1 out_mux_17_2_n2 k1583 
 AND out_mux_17_3_n1 inv$op1 out_mux_17__ysig0 
-CHAO out_mux_17_3_n2 op1 out_mux_17__ysig1 k1585 
+AND out_mux_17_3_n2 op1 out_mux_17__ysig1 
 OR out_mux_17__ysig3 out_mux_17_3_n1 out_mux_17_3_n2 
 AND out_mux_17_4_n1 inv$op2 out_mux_17__ysig3 
 AND out_mux_17_4_n2 op2 out_mux_17__ysig2 
-OR y17 out_mux_17_4_n1 out_mux_17_4_n2 
+CHAO y17 out_mux_17_4_n1 out_mux_17_4_n2 k1589 
 AND out_mux_18_0_n1 inv$op0 y18_and 
-CHAO out_mux_18_0_n2 op0 y18_or k1591 
-OR out_mux_18__ysig0 out_mux_18_0_n1 out_mux_18_0_n2 
+AND out_mux_18_0_n2 op0 y18_or 
+CHAO out_mux_18__ysig0 out_mux_18_0_n1 out_mux_18_0_n2 k1592 
 AND out_mux_18_1_n1 inv$op0 y18_xor 
-CHAO out_mux_18_1_n2 op0 y18_addsub k1594 
+AND out_mux_18_1_n2 op0 y18_addsub 
 OR out_mux_18__ysig1 out_mux_18_1_n1 out_mux_18_1_n2 
 AND out_mux_18_2_n1 inv$op0 y18_shl 
 AND out_mux_18_2_n2 op0 y18_shr 
@@ -1602,32 +1602,32 @@ OR out_mux_18__ysig3 out_mux_18_3_n1 out_mux_18_3_n2
 AND out_mux_18_4_n1 inv$op2 out_mux_18__ysig3 
 AND out_mux_18_4_n2 op2 out_mux_18__ysig2 
 OR y18 out_mux_18_4_n1 out_mux_18_4_n2 
-AND out_mux_19_0_n1 inv$op0 y19_and 
+CHAO out_mux_19_0_n1 inv$op0 y19_and k1605 
 AND out_mux_19_0_n2 op0 y19_or 
-OR out_mux_19__ysig0 out_mux_19_0_n1 out_mux_19_0_n2 
-AND out_mux_19_1_n1 inv$op0 y19_xor 
+CHAO out_mux_19__ysig0 out_mux_19_0_n1 out_mux_19_0_n2 k1607 
+CHAO out_mux_19_1_n1 inv$op0 y19_xor k1608 
 AND out_mux_19_1_n2 op0 y19_addsub 
 OR out_mux_19__ysig1 out_mux_19_1_n1 out_mux_19_1_n2 
 AND out_mux_19_2_n1 inv$op0 y19_shl 
 AND out_mux_19_2_n2 op0 y19_shr 
-CHAO out_mux_19__ysig2 out_mux_19_2_n1 out_mux_19_2_n2 k1613 
+OR out_mux_19__ysig2 out_mux_19_2_n1 out_mux_19_2_n2 
 AND out_mux_19_3_n1 inv$op1 out_mux_19__ysig0 
 AND out_mux_19_3_n2 op1 out_mux_19__ysig1 
 OR out_mux_19__ysig3 out_mux_19_3_n1 out_mux_19_3_n2 
-AND out_mux_19_4_n1 inv$op2 out_mux_19__ysig3 
+CHAO out_mux_19_4_n1 inv$op2 out_mux_19__ysig3 k1617 
 AND out_mux_19_4_n2 op2 out_mux_19__ysig2 
-OR y19 out_mux_19_4_n1 out_mux_19_4_n2 
-AND out_mux_20_0_n1 inv$op0 y20_and 
-CHAO out_mux_20_0_n2 op0 y20_or k1621 
+CHAO y19 out_mux_19_4_n1 out_mux_19_4_n2 k1619 
+CHAO out_mux_20_0_n1 inv$op0 y20_and k1620 
+AND out_mux_20_0_n2 op0 y20_or 
 OR out_mux_20__ysig0 out_mux_20_0_n1 out_mux_20_0_n2 
-AND out_mux_20_1_n1 inv$op0 y20_xor 
+CHAO out_mux_20_1_n1 inv$op0 y20_xor k1623 
 AND out_mux_20_1_n2 op0 y20_addsub 
-CHAO out_mux_20__ysig1 out_mux_20_1_n1 out_mux_20_1_n2 k1625 
-CHAO out_mux_20_2_n1 inv$op0 y20_shl k1626 
+OR out_mux_20__ysig1 out_mux_20_1_n1 out_mux_20_1_n2 
+AND out_mux_20_2_n1 inv$op0 y20_shl 
 AND out_mux_20_2_n2 op0 y20_shr 
 OR out_mux_20__ysig2 out_mux_20_2_n1 out_mux_20_2_n2 
-AND out_mux_20_3_n1 inv$op1 out_mux_20__ysig0 
-AND out_mux_20_3_n2 op1 out_mux_20__ysig1 
+CHAO out_mux_20_3_n1 inv$op1 out_mux_20__ysig0 k1629 
+CHAO out_mux_20_3_n2 op1 out_mux_20__ysig1 k1630 
 OR out_mux_20__ysig3 out_mux_20_3_n1 out_mux_20_3_n2 
 AND out_mux_20_4_n1 inv$op2 out_mux_20__ysig3 
 AND out_mux_20_4_n2 op2 out_mux_20__ysig2 
@@ -1635,7 +1635,7 @@ OR y20 out_mux_20_4_n1 out_mux_20_4_n2
 AND out_mux_21_0_n1 inv$op0 y21_and 
 AND out_mux_21_0_n2 op0 y21_or 
 OR out_mux_21__ysig0 out_mux_21_0_n1 out_mux_21_0_n2 
-AND out_mux_21_1_n1 inv$op0 y21_xor 
+CHAO out_mux_21_1_n1 inv$op0 y21_xor k1638 
 AND out_mux_21_1_n2 op0 y21_addsub 
 OR out_mux_21__ysig1 out_mux_21_1_n1 out_mux_21_1_n2 
 AND out_mux_21_2_n1 inv$op0 y21_shl 
@@ -1643,52 +1643,52 @@ AND out_mux_21_2_n2 op0 y21_shr
 CHAO out_mux_21__ysig2 out_mux_21_2_n1 out_mux_21_2_n2 k1643 
 CHAO out_mux_21_3_n1 inv$op1 out_mux_21__ysig0 k1644 
 AND out_mux_21_3_n2 op1 out_mux_21__ysig1 
-OR out_mux_21__ysig3 out_mux_21_3_n1 out_mux_21_3_n2 
-AND out_mux_21_4_n1 inv$op2 out_mux_21__ysig3 
+CHAO out_mux_21__ysig3 out_mux_21_3_n1 out_mux_21_3_n2 k1646 
+CHAO out_mux_21_4_n1 inv$op2 out_mux_21__ysig3 k1647 
 AND out_mux_21_4_n2 op2 out_mux_21__ysig2 
 CHAO y21 out_mux_21_4_n1 out_mux_21_4_n2 k1649 
-CHAO out_mux_22_0_n1 inv$op0 y22_and k1650 
-AND out_mux_22_0_n2 op0 y22_or 
-OR out_mux_22__ysig0 out_mux_22_0_n1 out_mux_22_0_n2 
-AND out_mux_22_1_n1 inv$op0 y22_xor 
-CHAO out_mux_22_1_n2 op0 y22_addsub k1654 
+AND out_mux_22_0_n1 inv$op0 y22_and 
+CHAO out_mux_22_0_n2 op0 y22_or k1651 
+CHAO out_mux_22__ysig0 out_mux_22_0_n1 out_mux_22_0_n2 k1652 
+CHAO out_mux_22_1_n1 inv$op0 y22_xor k1653 
+AND out_mux_22_1_n2 op0 y22_addsub 
 OR out_mux_22__ysig1 out_mux_22_1_n1 out_mux_22_1_n2 
 AND out_mux_22_2_n1 inv$op0 y22_shl 
 CHAO out_mux_22_2_n2 op0 y22_shr k1657 
 OR out_mux_22__ysig2 out_mux_22_2_n1 out_mux_22_2_n2 
-CHAO out_mux_22_3_n1 inv$op1 out_mux_22__ysig0 k1659 
-CHAO out_mux_22_3_n2 op1 out_mux_22__ysig1 k1660 
-CHAO out_mux_22__ysig3 out_mux_22_3_n1 out_mux_22_3_n2 k1661 
+AND out_mux_22_3_n1 inv$op1 out_mux_22__ysig0 
+AND out_mux_22_3_n2 op1 out_mux_22__ysig1 
+OR out_mux_22__ysig3 out_mux_22_3_n1 out_mux_22_3_n2 
 CHAO out_mux_22_4_n1 inv$op2 out_mux_22__ysig3 k1662 
-AND out_mux_22_4_n2 op2 out_mux_22__ysig2 
-CHAO y22 out_mux_22_4_n1 out_mux_22_4_n2 k1664 
+CHAO out_mux_22_4_n2 op2 out_mux_22__ysig2 k1663 
+OR y22 out_mux_22_4_n1 out_mux_22_4_n2 
 AND out_mux_23_0_n1 inv$op0 y23_and 
 AND out_mux_23_0_n2 op0 y23_or 
 OR out_mux_23__ysig0 out_mux_23_0_n1 out_mux_23_0_n2 
 AND out_mux_23_1_n1 inv$op0 y23_xor 
-CHAO out_mux_23_1_n2 op0 y23_addsub k1669 
-OR out_mux_23__ysig1 out_mux_23_1_n1 out_mux_23_1_n2 
+AND out_mux_23_1_n2 op0 y23_addsub 
+CHAO out_mux_23__ysig1 out_mux_23_1_n1 out_mux_23_1_n2 k1670 
 AND out_mux_23_2_n1 inv$op0 y23_shl 
 AND out_mux_23_2_n2 op0 y23_shr 
 OR out_mux_23__ysig2 out_mux_23_2_n1 out_mux_23_2_n2 
 AND out_mux_23_3_n1 inv$op1 out_mux_23__ysig0 
 AND out_mux_23_3_n2 op1 out_mux_23__ysig1 
 OR out_mux_23__ysig3 out_mux_23_3_n1 out_mux_23_3_n2 
-CHAO out_mux_23_4_n1 inv$op2 out_mux_23__ysig3 k1677 
+AND out_mux_23_4_n1 inv$op2 out_mux_23__ysig3 
 AND out_mux_23_4_n2 op2 out_mux_23__ysig2 
 OR y23 out_mux_23_4_n1 out_mux_23_4_n2 
-CHAO out_mux_24_0_n1 inv$op0 y24_and k1680 
-CHAO out_mux_24_0_n2 op0 y24_or k1681 
+AND out_mux_24_0_n1 inv$op0 y24_and 
+AND out_mux_24_0_n2 op0 y24_or 
 OR out_mux_24__ysig0 out_mux_24_0_n1 out_mux_24_0_n2 
 AND out_mux_24_1_n1 inv$op0 y24_xor 
 AND out_mux_24_1_n2 op0 y24_addsub 
 OR out_mux_24__ysig1 out_mux_24_1_n1 out_mux_24_1_n2 
 AND out_mux_24_2_n1 inv$op0 y24_shl 
 AND out_mux_24_2_n2 op0 y24_shr 
-OR out_mux_24__ysig2 out_mux_24_2_n1 out_mux_24_2_n2 
-CHAO out_mux_24_3_n1 inv$op1 out_mux_24__ysig0 k1689 
+CHAO out_mux_24__ysig2 out_mux_24_2_n1 out_mux_24_2_n2 k1688 
+AND out_mux_24_3_n1 inv$op1 out_mux_24__ysig0 
 AND out_mux_24_3_n2 op1 out_mux_24__ysig1 
-CHAO out_mux_24__ysig3 out_mux_24_3_n1 out_mux_24_3_n2 k1691 
+OR out_mux_24__ysig3 out_mux_24_3_n1 out_mux_24_3_n2 
 AND out_mux_24_4_n1 inv$op2 out_mux_24__ysig3 
 AND out_mux_24_4_n2 op2 out_mux_24__ysig2 
 OR y24 out_mux_24_4_n1 out_mux_24_4_n2 
@@ -1698,76 +1698,76 @@ OR out_mux_25__ysig0 out_mux_25_0_n1 out_mux_25_0_n2
 CHAO out_mux_25_1_n1 inv$op0 y25_xor k1698 
 AND out_mux_25_1_n2 op0 y25_addsub 
 OR out_mux_25__ysig1 out_mux_25_1_n1 out_mux_25_1_n2 
-AND out_mux_25_2_n1 inv$op0 y25_shl 
-AND out_mux_25_2_n2 op0 y25_shr 
+CHAO out_mux_25_2_n1 inv$op0 y25_shl k1701 
+CHAO out_mux_25_2_n2 op0 y25_shr k1702 
 OR out_mux_25__ysig2 out_mux_25_2_n1 out_mux_25_2_n2 
 CHAO out_mux_25_3_n1 inv$op1 out_mux_25__ysig0 k1704 
 AND out_mux_25_3_n2 op1 out_mux_25__ysig1 
 CHAO out_mux_25__ysig3 out_mux_25_3_n1 out_mux_25_3_n2 k1706 
 AND out_mux_25_4_n1 inv$op2 out_mux_25__ysig3 
 CHAO out_mux_25_4_n2 op2 out_mux_25__ysig2 k1708 
-CHAO y25 out_mux_25_4_n1 out_mux_25_4_n2 k1709 
-CHAO out_mux_26_0_n1 inv$op0 y26_and k1710 
+OR y25 out_mux_25_4_n1 out_mux_25_4_n2 
+AND out_mux_26_0_n1 inv$op0 y26_and 
 AND out_mux_26_0_n2 op0 y26_or 
-CHAO out_mux_26__ysig0 out_mux_26_0_n1 out_mux_26_0_n2 k1712 
+OR out_mux_26__ysig0 out_mux_26_0_n1 out_mux_26_0_n2 
 AND out_mux_26_1_n1 inv$op0 y26_xor 
-CHAO out_mux_26_1_n2 op0 y26_addsub k1714 
-CHAO out_mux_26__ysig1 out_mux_26_1_n1 out_mux_26_1_n2 k1715 
+AND out_mux_26_1_n2 op0 y26_addsub 
+OR out_mux_26__ysig1 out_mux_26_1_n1 out_mux_26_1_n2 
 AND out_mux_26_2_n1 inv$op0 y26_shl 
-AND out_mux_26_2_n2 op0 y26_shr 
-OR out_mux_26__ysig2 out_mux_26_2_n1 out_mux_26_2_n2 
+CHAO out_mux_26_2_n2 op0 y26_shr k1717 
+CHAO out_mux_26__ysig2 out_mux_26_2_n1 out_mux_26_2_n2 k1718 
 AND out_mux_26_3_n1 inv$op1 out_mux_26__ysig0 
 CHAO out_mux_26_3_n2 op1 out_mux_26__ysig1 k1720 
 OR out_mux_26__ysig3 out_mux_26_3_n1 out_mux_26_3_n2 
 AND out_mux_26_4_n1 inv$op2 out_mux_26__ysig3 
-AND out_mux_26_4_n2 op2 out_mux_26__ysig2 
-CHAO y26 out_mux_26_4_n1 out_mux_26_4_n2 k1724 
+CHAO out_mux_26_4_n2 op2 out_mux_26__ysig2 k1723 
+OR y26 out_mux_26_4_n1 out_mux_26_4_n2 
 AND out_mux_27_0_n1 inv$op0 y27_and 
 AND out_mux_27_0_n2 op0 y27_or 
-CHAO out_mux_27__ysig0 out_mux_27_0_n1 out_mux_27_0_n2 k1727 
-CHAO out_mux_27_1_n1 inv$op0 y27_xor k1728 
+OR out_mux_27__ysig0 out_mux_27_0_n1 out_mux_27_0_n2 
+AND out_mux_27_1_n1 inv$op0 y27_xor 
 AND out_mux_27_1_n2 op0 y27_addsub 
 OR out_mux_27__ysig1 out_mux_27_1_n1 out_mux_27_1_n2 
-AND out_mux_27_2_n1 inv$op0 y27_shl 
+CHAO out_mux_27_2_n1 inv$op0 y27_shl k1731 
 CHAO out_mux_27_2_n2 op0 y27_shr k1732 
 OR out_mux_27__ysig2 out_mux_27_2_n1 out_mux_27_2_n2 
 AND out_mux_27_3_n1 inv$op1 out_mux_27__ysig0 
 AND out_mux_27_3_n2 op1 out_mux_27__ysig1 
 OR out_mux_27__ysig3 out_mux_27_3_n1 out_mux_27_3_n2 
 AND out_mux_27_4_n1 inv$op2 out_mux_27__ysig3 
-AND out_mux_27_4_n2 op2 out_mux_27__ysig2 
+CHAO out_mux_27_4_n2 op2 out_mux_27__ysig2 k1738 
 OR y27 out_mux_27_4_n1 out_mux_27_4_n2 
-CHAO out_mux_28_0_n1 inv$op0 y28_and k1740 
+AND out_mux_28_0_n1 inv$op0 y28_and 
 AND out_mux_28_0_n2 op0 y28_or 
 CHAO out_mux_28__ysig0 out_mux_28_0_n1 out_mux_28_0_n2 k1742 
-CHAO out_mux_28_1_n1 inv$op0 y28_xor k1743 
+AND out_mux_28_1_n1 inv$op0 y28_xor 
 AND out_mux_28_1_n2 op0 y28_addsub 
-OR out_mux_28__ysig1 out_mux_28_1_n1 out_mux_28_1_n2 
+CHAO out_mux_28__ysig1 out_mux_28_1_n1 out_mux_28_1_n2 k1745 
 AND out_mux_28_2_n1 inv$op0 y28_shl 
-CHAO out_mux_28_2_n2 op0 y28_shr k1747 
+AND out_mux_28_2_n2 op0 y28_shr 
 OR out_mux_28__ysig2 out_mux_28_2_n1 out_mux_28_2_n2 
 AND out_mux_28_3_n1 inv$op1 out_mux_28__ysig0 
 AND out_mux_28_3_n2 op1 out_mux_28__ysig1 
 OR out_mux_28__ysig3 out_mux_28_3_n1 out_mux_28_3_n2 
 AND out_mux_28_4_n1 inv$op2 out_mux_28__ysig3 
 AND out_mux_28_4_n2 op2 out_mux_28__ysig2 
-OR y28 out_mux_28_4_n1 out_mux_28_4_n2 
-CHAO out_mux_29_0_n1 inv$op0 y29_and k1755 
-CHAO out_mux_29_0_n2 op0 y29_or k1756 
-CHAO out_mux_29__ysig0 out_mux_29_0_n1 out_mux_29_0_n2 k1757 
+CHAO y28 out_mux_28_4_n1 out_mux_28_4_n2 k1754 
+AND out_mux_29_0_n1 inv$op0 y29_and 
+AND out_mux_29_0_n2 op0 y29_or 
+OR out_mux_29__ysig0 out_mux_29_0_n1 out_mux_29_0_n2 
 AND out_mux_29_1_n1 inv$op0 y29_xor 
 AND out_mux_29_1_n2 op0 y29_addsub 
 OR out_mux_29__ysig1 out_mux_29_1_n1 out_mux_29_1_n2 
 AND out_mux_29_2_n1 inv$op0 y29_shl 
 CHAO out_mux_29_2_n2 op0 y29_shr k1762 
-OR out_mux_29__ysig2 out_mux_29_2_n1 out_mux_29_2_n2 
-AND out_mux_29_3_n1 inv$op1 out_mux_29__ysig0 
-AND out_mux_29_3_n2 op1 out_mux_29__ysig1 
+CHAO out_mux_29__ysig2 out_mux_29_2_n1 out_mux_29_2_n2 k1763 
+CHAO out_mux_29_3_n1 inv$op1 out_mux_29__ysig0 k1764 
+CHAO out_mux_29_3_n2 op1 out_mux_29__ysig1 k1765 
 OR out_mux_29__ysig3 out_mux_29_3_n1 out_mux_29_3_n2 
-CHAO out_mux_29_4_n1 inv$op2 out_mux_29__ysig3 k1767 
-AND out_mux_29_4_n2 op2 out_mux_29__ysig2 
+AND out_mux_29_4_n1 inv$op2 out_mux_29__ysig3 
+CHAO out_mux_29_4_n2 op2 out_mux_29__ysig2 k1768 
 OR y29 out_mux_29_4_n1 out_mux_29_4_n2 
-CHAO out_mux_30_0_n1 inv$op0 y30_and k1770 
+AND out_mux_30_0_n1 inv$op0 y30_and 
 CHAO out_mux_30_0_n2 op0 y30_or k1771 
 OR out_mux_30__ysig0 out_mux_30_0_n1 out_mux_30_0_n2 
 CHAO out_mux_30_1_n1 inv$op0 y30_xor k1773 
@@ -1775,25 +1775,25 @@ AND out_mux_30_1_n2 op0 y30_addsub
 CHAO out_mux_30__ysig1 out_mux_30_1_n1 out_mux_30_1_n2 k1775 
 AND out_mux_30_2_n1 inv$op0 y30_shl 
 AND out_mux_30_2_n2 op0 y30_shr 
-OR out_mux_30__ysig2 out_mux_30_2_n1 out_mux_30_2_n2 
+CHAO out_mux_30__ysig2 out_mux_30_2_n1 out_mux_30_2_n2 k1778 
 CHAO out_mux_30_3_n1 inv$op1 out_mux_30__ysig0 k1779 
-AND out_mux_30_3_n2 op1 out_mux_30__ysig1 
+CHAO out_mux_30_3_n2 op1 out_mux_30__ysig1 k1780 
 OR out_mux_30__ysig3 out_mux_30_3_n1 out_mux_30_3_n2 
 CHAO out_mux_30_4_n1 inv$op2 out_mux_30__ysig3 k1782 
 AND out_mux_30_4_n2 op2 out_mux_30__ysig2 
-OR y30 out_mux_30_4_n1 out_mux_30_4_n2 
+CHAO y30 out_mux_30_4_n1 out_mux_30_4_n2 k1784 
 AND out_mux_31_0_n1 inv$op0 y31_and 
 AND out_mux_31_0_n2 op0 y31_or 
 OR out_mux_31__ysig0 out_mux_31_0_n1 out_mux_31_0_n2 
 CHAO out_mux_31_1_n1 inv$op0 y31_xor k1788 
 AND out_mux_31_1_n2 op0 y31_addsub 
 OR out_mux_31__ysig1 out_mux_31_1_n1 out_mux_31_1_n2 
-AND out_mux_31_2_n1 inv$op0 y31_shl 
+CHAO out_mux_31_2_n1 inv$op0 y31_shl k1791 
 AND out_mux_31_2_n2 op0 y31_shr 
 OR out_mux_31__ysig2 out_mux_31_2_n1 out_mux_31_2_n2 
 AND out_mux_31_3_n1 inv$op1 out_mux_31__ysig0 
 AND out_mux_31_3_n2 op1 out_mux_31__ysig1 
 OR out_mux_31__ysig3 out_mux_31_3_n1 out_mux_31_3_n2 
 AND out_mux_31_4_n1 inv$op2 out_mux_31__ysig3 
-AND out_mux_31_4_n2 op2 out_mux_31__ysig2 
-CHAO y31 out_mux_31_4_n1 out_mux_31_4_n2 k1799 
+CHAO out_mux_31_4_n2 op2 out_mux_31__ysig2 k1798 
+OR y31 out_mux_31_4_n1 out_mux_31_4_n2 
